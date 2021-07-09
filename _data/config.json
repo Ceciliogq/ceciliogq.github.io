@@ -1,9 +1,9 @@
 {
     "title": "Cecilio García",
     "layout_style": "overflow",
-    "palette": "blue",
+    "palette": "green",
     "header": {
-        "title": "Cecilio García",
+        "title": "Cecilio García Quirós",
         "tagline": "Physics Doctor",
         "profile_img": "images/avatar.png",
         "profile_img_alt": "Author avatar",
@@ -16,14 +16,20 @@
                 "style": "link"
             },
             {
-                "label": "Blog",
+                "label": "Publications",
                 "url": "/blog/",
+                "style": "link"
+            },
+            {
+                "label": "Resources",
+                "url": "/resources",
                 "style": "link"
             },
             {
                 "label": "CV",
                 "url": "https://ceciliogq.github.io/assets/resume.pdf",
-                "style": "link"
+                "style": "link",
+                "new_window":true
             },
             {
                 "label": "About",
@@ -39,40 +45,33 @@
         "has_social": true,
         "social_links": [
             {
-                "label": "Twitter",
-                "url": "https://twitter.com/",
+                "label": "Google Scholar",
+                "url": "https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=cecilio+garc%C3%ADa-quir%C3%B3s&oq=c",
                 "style": "icon",
-                "icon_class": "twitter",
+                "icon_class": "googlescholar",
                 "new_window": true
             },
             {
-                "label": "Instagram",
-                "url": "https://www.instagram.com/",
+                "label": "Orcid",
+                "url": "https://orcid.org/0000-0002-8059-2477",
                 "style": "icon",
-                "icon_class": "instagram",
+                "icon_class": "orcid",
                 "new_window": true
-            },
+            },            
             {
                 "label": "GitHub",
-                "url": "https://github.com/",
+                "url": "https://github.com/ceciliogq",
                 "style": "icon",
                 "icon_class": "github",
                 "new_window": true
             },
             {
                 "label": "LinkedIn",
-                "url": "https://www.linkedin.com/",
+                "url": "https://www.linkedin.com/in/cecilio-garc%C3%ADa-quir%C3%B3s-671949105/",
                 "style": "icon",
                 "icon_class": "linkedin",
                 "new_window": true
             },
-            {
-                "label": "DEV",
-                "url": "https://dev.to/",
-                "style": "icon",
-                "icon_class": "dev",
-                "new_window": true
-            }
         ]
     },
     "footer": {

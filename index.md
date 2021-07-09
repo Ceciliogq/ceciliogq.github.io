@@ -4,23 +4,13 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: 'Hi, I''m Cecilio García.'
+    title: 'Cecilio García Quirós'
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
       one to three sentences, but can be changed as you prefer.
       [get the PDF](https://ceciliogq.github.io/assets/resume.pdf)
-  - section_id: CV
-    type: section_content
-    title: Curriculum
-    content: >-
-      This is the "CV" excerpt. It can be used to provide a paragraph about
-      yourself that people can read on the homepage to get a sense of who you
-      are. There also exists a dedicated about page where you can write more
-      about yourself for those who are interested.
-    actions:
-      - label: CV label
-        url: "https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf"
-        style: button
+      [get the PDF](https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf)
+      [Phys. Rev. D 102, 064002](https://doi.org/10.1103/PhysRevD.102.064002){:target="_blank"}{:rel="noopener noreferrer"}
   - section_id: about
     type: section_content
     title: About
@@ -42,7 +32,7 @@ sections:
         url: blog/index.html
         style: button
 seo:
-  title: Stackbit Fresh Theme
+  title: Home - Cecilio García Quirós
   description: The preview of the Fresh theme
   extra:
     - name: 'og:type'

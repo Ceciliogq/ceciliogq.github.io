@@ -1,36 +1,19 @@
 ---
 title: About Me
-subtitle: This is a short page about me and my work.
-img_path: images/about.jpg
-img_alt: Portrait of a man with beard and mustache
-seo:
-  title: About Me
-  description: This is the about me page
-  extra:
-    - name: 'og:type'
-      value: website
-      keyName: property
-    - name: 'og:title'
-      value: About Me
-      keyName: property
-    - name: 'og:description'
-      value: This is the about me page
-      keyName: property
-    - name: 'og:image'
-      value: images/about.jpg
-      keyName: property
-      relativeUrl: true
-    - name: 'twitter:card'
-      value: summary_large_image
-    - name: 'twitter:title'
-      value: About Me
-    - name: 'twitter:description'
-      value: This is the about me page
-    - name: 'twitter:image'
-      value: images/about.jpg
-      relativeUrl: true
-layout: page
+hide_title: true
+sections:
+  - section_id: hero
+    type: section_hero
+    title: 'Cecilio García Quirós'
+    content: >-
+      This section can contain a subtitle or tagline. The recommended length is
+      one to three sentences, but can be changed as you prefer.
+      [get the PDF](https://ceciliogq.github.io/assets/resume.pdf)
+      [get the PDF](https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf)
+      [Phys. Rev. D 102, 064002](https://doi.org/10.1103/PhysRevD.102.064002){:target="_blank"}{:rel="noopener noreferrer"}
+layout: advanced
 ---
+
 
 **John Doe** is a Senior Art Director from [Stockholm](https://en.wikipedia.org/wiki/Stockholm), Sweden. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
 
