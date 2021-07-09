@@ -8,7 +8,7 @@ sections:
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
       one to three sentences, but can be changed as you prefer.
-      [get the PDF]({{ site.url }}/assets/mydoc.pdf)
+      [get the PDF](https://ceciliogq.github.io/assets/resume.pdf)
   - section_id: CV
     type: section_content
     title: Curriculum
