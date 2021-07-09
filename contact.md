@@ -1,5 +1,5 @@
 ---
-title: Contactaaaammmmmeeiiiiiiiiii
+title: Contact me
 hide_title: false
 sections:
   - section_id: contact-form
