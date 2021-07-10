@@ -5,15 +5,22 @@ sections:
   - section_id: hero
     type: section_hero
     title: Cecilio García Quirós
-    content: Ph.D. in Gravitational Waves Astronomy
+    content: |
+      Ph.D. in Gravitational Waves Astronomy   
+      > Why do we fall Bruce? So we can learn that Gravity rules the world
   - section_id: about
     type: section_content
     title: About
     content: |
+      *   Waveform Phenomenology
+      *   Parameter Estimation
+      *   Data Detective    
+      *   Code Developer  
+          
       *   Postdoctoral Researcher, University of Balearic Islands
       *   LIGO Scientific Collaboration & LISA Consortium
       *   Ph.D. Student, University of Balearic Islands
-      *   B.S. & M.S in Physics, University of Granada
+      *   B.S. & M.S in Physics, University of Granada"
 
     actions:
       - label: Read Moore
