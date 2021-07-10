@@ -1,15 +1,14 @@
 ---
-title: Best Waves - Surfing In Spain
+title: Accelerating the evaluation of inspiral–merger–ringdown waveforms with adapted grids
 subtitle: A intresting tale about Surfing
 excerpt: >-
-  Surfing is a surface water sport in which the wave rider, referred to as a
-  surfer, rides on the forward or deep face of a moving wave, which is usually
-  carrying the surfer towards the shore.
-date: '2018-01-15'
-thumb_img_path: images/4.jpg
-thumb_img_alt: Three person about to surf
-content_img_path: images/4.jpg
-content_img_alt: Three person about to surf
+  This paper presents an algorithm to accelerate the evaluation of inspiral-merger-ringdown waveform models for gravitational wave data analysis.
+authors: C. García-Quirós, S. Husa, M. Mateu-Lucena, and A. Borchers
+arxiv_url: 'https://arxiv.org/abs/2001.10897'
+arxiv_number: ' arXiv:2001.10897'
+journal_url: 'https://doi.org/10.1088/1361-6382/abc36e'
+journal_number: 'Class. Quantum Grav. 38 015006'  
+date: '2020-11-27'
 seo:
   title: Best Waves - Surfing In Spain
   description: A intresting tale about Surfing

@@ -1,17 +1,13 @@
 ---
-title: IMRPhenomXHM 
+title: Multimode frequency-domain model for the gravitational wave signal from nonprecessing black-hole binaries 
 excerpt: >-
-  Photo by [Anders Jildén](https://unsplash.com/photos/uO4Au3LrCtk)
-  We present the frequency domain phenomenological waveform model for the inspiral, merger, and ringdown of quasicircular nonprecessing black hole binaries. 
-  <br/><br/>
-  C. García-Quirós, M. Colleoni, Sascha Husa, Héctor Estellés, Geraint Pratten, Antoni Ramos-Buades, Maite Mateu-Lucena, and Rafel Jaume
-  <br/>
-  [get the PDF](https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf)
-date: '2020-03-27'
-thumb_img_path: images/7.jpg
-thumb_img_alt: Icelandic horses
-content_img_path: images/7.jpg
-content_img_alt: Icelandic horses
+    We present the frequency domain phenomenological waveform model for the inspiral, merger, and ringdown of quasicircular nonprecessing black hole binaries. 
+authors: C. García-Quirós, M. Colleoni, S. Husa, H. Estellés, G. Pratten, A. Ramos-Buades, M. Mateu-Lucena, and R. Jaume
+arxiv_url: 'https://arxiv.org/abs/2106.08730'
+arxiv_number: 'arXiv:2106.08730'
+journal_url: 'https://doi.org/10.1103/PhysRevD.102.064002'
+journal_number: 'Phys. Rev. D 102, 064002'
+date: '2020-09-02'
 seo:
   title: Fragments of Iceland
   description: Iceland is a Nordic country between the North Atlantic and the Arctic Ocean.

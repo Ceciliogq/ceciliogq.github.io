@@ -1,15 +1,13 @@
 ---
-title: Basic Rules For Walking In The Mountains
+title: First Higher-Multipole Model of Gravitational Waves from Spinning and Coalescing Black-Hole Binaries”
 excerpt: >-
-  Hiking can sometimes involves bushwhacking and hiking is sometimes referred to
-  as such. This specifically refers to difficult walking through dense forest,
-  undergrowth, or bushes, where forward progress requires pushing vegetation
-  aside.
-date: '2018-01-09'
-thumb_img_path: images/6.jpg
-thumb_img_alt: Hikers on the trail
-content_img_path: images/6.jpg
-content_img_alt: Hikers on the trail
+  Gravitational-wave observations of binary black holes currently rely on theoretical models that predict the dominant multipoles (l,m) of the radiation during inspiral, merger and ringdown. We introduce a simple method to include the subdominant multipoles to binary black hole gravitational waveforms, given a frequency-domain model for the dominant multipoles.
+authors: L. London, S. Khan, E. Fauchon-Jones, C. García, M. Hannam, S. Husa, X. Jiménez-Forteza, C. Kalaghatgi, F. Ohme, and F. Pannarale
+arxiv_url: 'https://arxiv.org/abs/1708.00404'
+arxiv_number: 'arXiv:1708.00404'
+journal_url: 'https://doi.org/10.1103/physrevlett.120.161102'
+journal_number: 'Phys. Rev. Lett. 120, 161102' 
+date: '2018-04-19'
 seo:
   title: Basic Rules For Walking In The Mountains
   description: >-

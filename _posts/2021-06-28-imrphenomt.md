@@ -1,15 +1,13 @@
 ---
-title: Minimalist Travel - A Weekend in Japan
+title: Phenomenological time domain model for dominant quadrupole gravitational wave signal of coalescing binary black holesn
 excerpt: >-
-  The Shrines of Ise have been celebrated as the prototype of Japanese
-  architecture. Largely of wood, traditional housing and many temple buildings
-  see the use of tatami mats and sliding doors that break down the distinction
-  between rooms and indoor and outdoor space.
-date: '2019-03-24'
-thumb_img_path: images/2.jpg
-thumb_img_alt: Fushimi Inari Shrine in Kyoto
-content_img_path: images/2.jpg
-content_img_alt: Fushimi Inari Shrine in Kyoto
+  In this work we present IMRPhenomT, a time domain phenomenological model for the dominant (l=2, |m|=2) modes of coalescing black hole binary systems and its precessing extension IMRPhenomTP to describe general precessing systems within the "twisting-up" approximation.
+date: '2021-06-28'
+authors: H. Estellés, A. Ramos-Buades, S. Husa, C. García-Quirós, M. Colleoni, L. Haegel, and R. Jaume
+arxiv_url: 'https://arxiv.org/abs/2004.08302'
+arxiv_number: 'arXiv:2004.08302'
+journal_url: 'https://doi.org/10.1103/PhysRevD.103.124060'
+journal_number: 'Phys. Rev. D 103, 124060'
 seo:
   title: A Weekend in Japan
   description: >-

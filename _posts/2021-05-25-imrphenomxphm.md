@@ -1,15 +1,13 @@
 ---
-title: Hiking The Grand Canyon
+title: Computationally efficient models for the dominant and subdominant harmonic modes of precessing binary black holes
 excerpt: >-
-  The Grand Canyon is a steep-sided canyon carved by the Colorado River in
-  Arizona, United States. The Grand Canyon is 277 miles (446 km) long, up to 18
-  miles (29 km) wide and attains a depth of over a mile (6,093 feet or 1,857
-  meters).
-date: '2019-03-10'
-thumb_img_path: images/8.jpg
-thumb_img_alt: Hikers on the trail
-content_img_path: images/8.jpg
-content_img_alt: Hikers on the trail
+  We present IMRPhenomXPHM, a phenomenological frequency-domain model for the gravitational-wave signal emitted by quasicircular precessing binary black holes, which incorporates multipoles beyond the dominant quadrupole in the precessing frame.
+authors: G. Pratten, C. García-Quirós, M. Colleoni, A. Ramos-Buades, H. Estellés, M. Mateu-Lucena, R. Jaume, M. Haney, D. Keitel, J. E.Thompson, and S. Husa
+arxiv_url: 'https://arxiv.org/abs/2004.06503'
+arxiv_number: 'arXiv:2004.06503'
+journal_url: 'https://doi.org/10.1103/PhysRevD.103.104056'
+journal_number: 'Phys. Rev. D 103, 104056'
+date: '2021-05-25'
 seo:
   title: Hiking The Grand Canyon
   description: >-
