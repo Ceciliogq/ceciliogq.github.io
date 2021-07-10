@@ -1,11 +1,11 @@
 ---
 title: About Me
-subtitle: This is a short page about me and my work.
+subtitle: 
 img_path: images/about.jpg
 img_alt: Portrait of a man with beard and mustache
 seo:
   title: About Me - Cecilio García Quirós
-  description: This is the about me page
+  description: 
   extra:
     - name: 'og:type'
       value: website
@@ -44,6 +44,3 @@ I am interested in:
 - Software development, open source
 
 Among my hobbies, you can find me at the gym, playing the guitar, reading History or learning about anything related with coding. 
-
-
-*Thank You for reading!*

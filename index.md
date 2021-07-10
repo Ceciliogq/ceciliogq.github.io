@@ -10,17 +10,11 @@ sections:
     type: section_content
     title: About
     content: |
-      *   asf
+      *   Postdoctoral Researcher, University of Balearic Islands
+      *   LIGO Scientific Collaboration & LISA Consortium
+      *   Ph.D. Student, University of Balearic Islands
+      *   B.S. & M.S in Physics, University of Granada
 
-      *   asfd
-
-      *   asdfas
-
-      > Quote
-
-
-
-      <https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf>
     actions:
       - label: Read Moore
         url: /about
