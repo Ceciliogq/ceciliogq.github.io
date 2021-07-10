@@ -28,6 +28,10 @@ layout: body
           </div>
           {% endif %}
           <footer class="post-meta">
+            <p>{{ post.authors }}</p>
+            <p> <a href="{{ post.journal_url }}">{{ post.journal_number }}</a>
+              <a href="{{ post.arxiv_url }}">{{ post.arxiv_number }}</a>
+            </p>
             <time class="published"
               datetime="{{ post.date | date: '%Y-%m-%d %H:%M' }}">{{ post.date | date: '%B %d, %Y' }}</time>
           </footer>
