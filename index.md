@@ -10,13 +10,16 @@ sections:
     type: section_content
     title: About
     content: |
-      *   asf 
+      *   asf
 
       *   asfd
 
       *   asdfas
 
-      Quote
+      > Quote
+
+
+
       <https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf>
     actions:
       - label: Read Moore
