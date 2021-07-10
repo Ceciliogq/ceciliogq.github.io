@@ -17,20 +17,20 @@ sections:
       are. There also exists a dedicated about page where you can write more
       about yourself for those who are interested.
     actions:
-      - label: Contact Me
-        url: /contact
+      - label: Read Moore
+        url: /about
         style: button
   - section_id: recent-posts
     type: section_posts
-    title: Recent Posts
-    posts_number: 4
+    title: Recent Publications
+    posts_number: 6
     actions:
-      - label: View Blog
+      - label: More Publications
         url: blog/index.html
         style: button
 seo:
   title: Home - Cecilio García Quirós
-  description: The preview of the Fresh theme
+  description: Personal website of Dr. Cecilio García Quirós
   extra:
     - name: 'og:type'
       value: website

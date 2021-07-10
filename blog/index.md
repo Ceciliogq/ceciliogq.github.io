@@ -1,8 +1,8 @@
 ---
-title: Blog
+title: Publications
 seo:
-  title: Blog
-  description: This is the blog page
+  title: Publications - Cecilio García Quirós
+  description: Publications of Cecilio García-Quirós
   extra:
     - name: 'og:type'
       value: website

@@ -18,14 +18,10 @@ sections:
         label: Email
         default_value: Your email address
         is_required: true
-      - input_type: select
+      - input_type: text
         name: subject
         label: Subject
-        default_value: Please select
-        options:
-          - Error on the site
-          - Sponsorship
-          - Other
+        default_value: Enter Subject
       - input_type: textarea
         name: message
         label: Message
@@ -37,7 +33,7 @@ sections:
           can be contacted.
     submit_label: Send Message
 seo:
-  title: Contact
+  title: Contact - Cecilio García Quirós
   description: This is the contact page
   extra:
     - name: 'og:type'
