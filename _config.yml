@@ -1,8 +1,9 @@
-title: Stackbit Fresh Theme
+title: Cecilio García Quiros Website
 baseurl: /
 permalink: '/:title/'
 plugins:
   - jekyll-menus
+  - jekyll-seo-tag
 collections:
   posts:
     permalink: '/posts/:title/'

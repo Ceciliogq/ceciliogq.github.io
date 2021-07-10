@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
     <head>    
-
+        <link rel="icon" type="image/png" href="/images/favicon.png"/>
         <title>{% assign title_is_not_empty = page.seo.title | is_not_empty %}{% if title_is_not_empty %}{{ page.seo.title }}{% else %}{{ page.title | append: ' | ' | append: site.data.config.title }}{% endif %}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
