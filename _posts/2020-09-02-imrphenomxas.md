@@ -11,10 +11,6 @@ arxiv_number: 'arXiv:2001.11412'
 journal_url: 'https://doi.org/10.1103/physrevd.102.064001'
 journal_number: 'Phys. Rev. D 102, 064002' 
 date: '2020-09-02'
-thumb_img_path: images/5.jpg
-thumb_img_alt: A red fox in a rocky forest
-content_img_path: images/5.jpg
-content_img_alt: A red fox in a rocky forest
 seo:
   title: Fox Village In Japan
   description: >-
