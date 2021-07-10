@@ -8,9 +8,6 @@ sections:
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
       one to three sentences, but can be changed as you prefer.
-      [get the PDF](https://ceciliogq.github.io/assets/resume.pdf)
-      [get the PDF](https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf)
-      [Phys. Rev. D 102, 064002](https://doi.org/10.1103/PhysRevD.102.064002){:target="_blank"}{:rel="noopener noreferrer"}
   - section_id: about
     type: section_content
     title: About
