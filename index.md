@@ -5,14 +5,19 @@ sections:
   - section_id: hero
     type: section_hero
     title: Cecilio García Quirós
-    content: >-
-      Ph.D. in Gravitational Waves Astronomy
+    content: Ph.D. in Gravitational Waves Astronomy
   - section_id: about
     type: section_content
     title: About
-    content: >-
-      - asf
-      - asdf
+    content: |
+      *   asf 
+
+      *   asfd
+
+      *   asdfas
+
+      Quote
+      <https://github.com/Ceciliogq/awesomeCV/blob/master/resume.pdf>
     actions:
       - label: Read Moore
         url: /about
