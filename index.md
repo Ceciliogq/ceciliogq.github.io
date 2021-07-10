@@ -4,7 +4,7 @@ hide_title: true
 sections:
   - section_id: hero
     type: section_hero
-    title: 'Cecilio García Quirós'
+    title: Cecilio García Quirós
     content: >-
       Ph.D. in Gravitational Waves Astronomy
   - section_id: about
