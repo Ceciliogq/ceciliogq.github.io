@@ -9,16 +9,13 @@ sections:
   - section_id: about
     type: section_content
     title: About
-    content: |
-      *   Waveform Phenomenology
-      *   Parameter Estimation
-      *   Data Detective    
-      *   Code Developer  
-          
+    content: |    
       *   Postdoctoral Researcher, University of Balearic Islands
       *   LIGO Scientific Collaboration & LISA Consortium
       *   Ph.D. Student, University of Balearic Islands
-      *   B.S. & M.S in Physics, University of Granada
+            
+      Waveform Phenomenology  <br/> Parameter Estimation <br/>Code Developer <br/> Data Detective <br/> 
+      
     actions:
       - label: Read Moore
         url: /about
