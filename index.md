@@ -18,7 +18,7 @@ sections:
       *   Postdoctoral Researcher, University of Balearic Islands
       *   LIGO Scientific Collaboration & LISA Consortium
       *   Ph.D. Student, University of Balearic Islands
-      *   B.S. & M.S in Physics, University of Granada"
+      *   B.S. & M.S in Physics, University of Granada
     actions:
       - label: Read Moore
         url: /about
