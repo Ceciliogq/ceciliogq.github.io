@@ -1,5 +1,5 @@
 ---
-title: Publications
+title: Publications a
 seo:
   title: Publications - Cecilio García Quirós
   description: Publications of Cecilio García-Quirós
