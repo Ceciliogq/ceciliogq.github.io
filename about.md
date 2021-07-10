@@ -33,12 +33,17 @@ layout: page
 ---
 
 
-**John Doe** is a Senior Art Director from [Stockholm](https://en.wikipedia.org/wiki/Stockholm), Sweden. After graduating from The College of Visual Arts with a degree in Communication Design, he worked for three small graphic design shops where he honed his design style and sensibility.
+I am a Physics Doctor from [Granada](https://en.wikipedia.org/wiki/Granada), Spain. I obtained my Ph.D from the University of Balearic Islands under the supervision of Profs. Sascha Husa and Alicia Sintes. I worked in the development of computationally efficient models which describe the subdominant modes content of the inspiral-merger-ringdown signal emitted by the fusion of binaries black holes.
 
-His work has been recognized by Communication Arts, Print, How, ID, IdN, AIGA, Effie, Archive, Graphis, AdFed and Rockport. Graphic Design USA named him a person to watch in 2019.
+These models belong to the IMRPhenomX waveform family, created to address the challenges of the exceptional events to be detected during the third observation period. They are currently being used by the LIGO-Virgo Collaboration to obtain accurate information about the properties of the emitting source.
 
->The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
+I am interested in:
+- Accurate waveform modelling
+- Computational parallelization, GPUs
+- Data analysis, machine learning, AI
+- Software development, open source
 
-As a hobby, John Doe authors the most influential design blog in Sweden with over 100,000 page views a month. He lives in Stockholm with his beautiful wife and two boys.
+Among my hobbies, you can find me at the gym, playing the guitar, reading History or learning about anything related with coding. 
+
 
 *Thank You for reading!*
