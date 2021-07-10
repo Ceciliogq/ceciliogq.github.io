@@ -7,7 +7,7 @@ sections:
     title: Cecilio García Quirós
     subtitle: Ph.D. in Gravitational Waves Astronomy
     content: |
-       Why do we fall Bruce? So we can learn that Gravity rules the world
+       >>Why do we fall Bruce? So we can learn that Gravity rules the world
   - section_id: about
     type: section_content
     title: About
