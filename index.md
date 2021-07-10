@@ -8,7 +8,7 @@ sections:
     content: >-
       This section can contain a subtitle or tagline. The recommended length is
       one to three sentences, but can be changed as you prefer.
-  - section_id: hola
+  - section_id: about
     type: section_content
     title: About
     content: >-
