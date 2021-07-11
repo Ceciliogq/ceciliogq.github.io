@@ -26,3 +26,5 @@ exclude:
   - README.md
   - netlify.toml
   - stackbit-build.sh
+markdown: kramdown
+highlighter: rouge
