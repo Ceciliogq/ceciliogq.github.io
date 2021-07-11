@@ -23,10 +23,18 @@ sections:
   - section_id: recent-posts
     type: section_posts
     title: Recent Publications
-    posts_number: 6
+    posts_number: 4
     actions:
       - label: More Publications
         url: blog/index.html
+        style: button
+  - section_id: recent-posts2
+    type: section_posts
+    title: Recent Posts
+    posts_number: 4
+    actions:
+      - label: More Posts
+        url: blog2/index.html
         style: button
 seo:
   title: Home - Cecilio García Quirós

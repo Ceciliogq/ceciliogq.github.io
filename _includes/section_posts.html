@@ -6,7 +6,11 @@
   {% endif %}
   <div class="post-feed">
     <div class="post-feed-inside">
-      {% assign display_posts = '/posts' | get_pages | sort: 'date' | reverse %}
+      {% if section.title == 'Recent Publications' %}
+      {% assign display_posts = site.posts | sort: 'date' | reverse %}
+      {% elsif section.title == 'Recent Posts' %}
+      {% assign display_posts = site.posts2 | sort: 'date' | reverse %}
+      {% endif %}
       {% assign slice_length = section.posts_number | minus: 0 %}
       {% assign recent_posts = display_posts | slice: 0, slice_length %}
       {% for post in recent_posts %}
