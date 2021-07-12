@@ -1,13 +1,13 @@
 ---
-title: Notebook
+title: Introduction to Gravitational Wave Data Analysis
 excerpt: >-
-  From Summer School
+  Introduction to the GW libraries gwosc, gwpy and pycbc for performing GW Data Analysis from the Escape Summer School 2021 on Data science for Astronomy, Astroparticle and Particle Physics.
 authors: ESCAPE SCHOOL 2021
 date: '2021-07-01'
-arxiv_url: 'https://arxiv.org/abs/1708.00404'
-arxiv_number: 'arXiv:1708.00404'
-journal_url: 'https://doi.org/10.1103/physrevlett.120.161102'
-journal_number: 'Phys. Rev. Lett. 120, 161102' 
+arxiv_url: 'https://escape2020.github.io/school2021/'
+arxiv_number: 'School Website'
+journal_url: 'https://github.com/escape2020/school2021/blob/main/gravitational_waves/hands_on_gw.ipynb'
+journal_number: 'See on School github' 
 layout: post
 ---
 
