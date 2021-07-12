@@ -44,10 +44,10 @@ seo:
       value: website
       keyName: property
     - name: 'og:title'
-      value: Stackbit Fresh Theme
+      value: Cecilio García Quirós 
       keyName: property
     - name: 'og:description'
-      value: The preview of the Fresh theme
+      value: Personal Website
       keyName: property
     - name: 'og:image'
       value: images/4.jpg
