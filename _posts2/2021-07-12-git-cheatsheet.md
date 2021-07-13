@@ -1,5 +1,5 @@
 ---
-title: Git Cheatsheet
+title: HOW TO GIT
 excerpt: >-
   Useful git commands and tricks. Gathered from my experience and from the ESCAPE School. Will continue adding.
 authors: C. García-Quirós
@@ -10,7 +10,7 @@ layout: post
 
 # Git Cheatsheet
 
-# Setup configurations
+## Setup configurations
 
 - Tell git who are you, for the log history
 
@@ -38,7 +38,7 @@ layout: post
 <br/><br/>
 - `git config --global pull.rebase true`  Set `git pull --rebase` as default when doing `git pull`
 
-# Create, Download repo
+## Create, Download repo
 
 1. Create repo locally:
     - `git init` (inside a folder with repo name. It creates the folder .git)
@@ -55,13 +55,13 @@ layout: post
 <br/><br/>
 4. `rm -rf .git` remove all trace of git. 
 
-# git status
+## git status
 
 See the current status of the local repo: modified files, (un-)staged files, untracked files, etc.
 
 - `git status -s` will show a reduced version, with one line per file. To the left, a coloured letter will tell the status of the file.
 
-# git add
+## git add
 
 - `git add filename` Add one file to the staged area
 - `git add . `  Add all the files, tracked and untracked in the current folder
@@ -77,14 +77,14 @@ See the current status of the local repo: modified files, (un-)staged files, unt
 - `git rm filename`  remove a file and put the change in the staged area.
 - Both need to do commit afterwards
 
-# git commit 
+## git commit 
 
 - `git commit -m "Commit message" filename`  Will commit the added changes in filename. This will only in your local repo not yet on the internet. Without -m will promt you to write a log message. If the message contains '#number', it will link to the issue 'number' 
 - Modify message of last commit
    - `git commit --amend -m "New message"`  This changes the hash number
    - For pushed commits use `git push --force remotename branchname`
 
-# git log 
+## git log 
 
 See history of commits 
 
@@ -104,7 +104,7 @@ See history of commits
    - `--all` shows all the refs in .git/refs as commit
    - `--graph` show drawing of commit relations
 
-# git diff
+## git diff
 
 See difference between working directory and staging area.
 
@@ -114,7 +114,7 @@ See difference between working directory and staging area.
 - `git diff --color source_file > output.txt`
 - `less -R output.txt`
 
-# git push
+## git push
 
 Publish the commits on the internet repo
 
@@ -123,7 +123,7 @@ Publish the commits on the internet repo
 - `git push -f(--force)` force the commits to be published. 
 - `git push origin --delete branchname`  delete the branch remotely
 
-# git checkout
+## git checkout
 
 - `git checkout commit_has` load specific commit 
 - Switching between branches has now changed to `git switch`
@@ -137,7 +137,7 @@ Publish the commits on the internet repo
 - `git checkout -b new_branch remote/branchname`  clone remote branch
 - `git branch new_branch` create new branch pointing to current commit
 
-# git fetch, merge, pull
+## git fetch, merge, pull
 
 - `git fetch`  Bring changes from remote to a local staging area
 - `git merge`  Merge previous changes to default remote/branch (remote, branch can be changed). The commits has are not changed, it add a "merge commit" and the rest are merged in cronological order
@@ -147,7 +147,7 @@ Publish the commits on the internet repo
 - `git pull remote branch` pull specific fork and branch
 
 
-# git rebase
+## git rebase
 
 For rewriting the git history: change commit order, drop/edit commits, merge multiple commits into one.
 
@@ -156,7 +156,7 @@ For rewriting the git history: change commit order, drop/edit commits, merge mul
 - `git pull --rebase` = `git fetch` & previous point
 - `git rebase -i commit_hash`  modify a commit interactively
 
-# Branches
+## Branches
 
 - `git branch` see current branches
 <br/>
@@ -173,7 +173,7 @@ For rewriting the git history: change commit order, drop/edit commits, merge mul
     - `git fetch --all`
     - `git reset --hard origin/master`
 
-# Work with different versions of the same repo (forks)
+## Work with different versions of the same repo (forks)
 
 When you want to contribute to an existing project you typically fork that repo into your username and clone your fork. That is your 'origin', but you can other repos and call the whaterver you want. It is common practice to name the second one as 'upstream'.
 
@@ -185,15 +185,8 @@ You can fetch chages from upstream, merge, switch branches and push changes to i
 - `git remote -v` to see the forks available
 
 
-
-
-# Submodules
+## Submodules
 
 - `git submodule add url path`  Add reference to another repository at a certain commit
 - `git clone url --recursive`   Clone also the submodules
 - `git submodule update --init --recursive` Update submodules (e.g. if changed on the remote)
-
-
-```python
-
-```

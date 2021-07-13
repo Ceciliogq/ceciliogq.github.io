@@ -26,6 +26,7 @@ exclude:
   - README.md
   - netlify.toml
   - stackbit-build.sh
+markdwon: redcarpet
 markdown: kramdown
 # !github-pages! mandatory › https://help.github.com/articles/using-jekyll-with-pages/#configuration-settings-you-cannot-change
 # Since Jekyll 3 the default highlighter is Rouge (replaced Pygments.rb in v44)
