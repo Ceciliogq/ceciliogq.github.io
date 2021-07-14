@@ -71,6 +71,7 @@ See the current status of the local repo: modified files, (un-)staged files, unt
 - `git add _`  Something when there is a merge conflict???
 
 - `git reset filename`  Remove file from the staged area. (You added the wrong file e.g.)
+- A alternative is doing `git restore --staged filename`
 <br/>
 
 - `git mv oldfilename newfilename`  rename a file and put it in the staged area.
@@ -190,3 +191,40 @@ You can fetch chages from upstream, merge, switch branches and push changes to i
 - `git submodule add url path`  Add reference to another repository at a certain commit
 - `git clone url --recursive`   Clone also the submodules
 - `git submodule update --init --recursive` Update submodules (e.g. if changed on the remote)
+
+## How to undo a git merge (--squas) 
+- `git fetch upstream`  (lscsoft/master)
+- `git show commit1_hash`  This is the commit where my branch diverged from upstream/master after the merge 
+- `git revert commit1_hash`  This will make a series of commit to undo the merge commit
+- `git rebase -i commit2_hash`  This is the previous to commit1
+- Delete the line of my big merge into master
+- `git merge upstream/master`
+- Solve conflicts if any
+- `git add`, `git commit`, `git push -f origin/review-branch`
+
+
+## Tags 
+Tag a specific commit, e.g. for released versions.
+There are two types of tags:
+- Lightweight: only points to a commit
+- Annotated: include more info like a messages and the tagger's info
+
+- `git tag tagname` Lightweight
+- `git tag -a tagname -m "Version v.1"` Annotated
+- `git tag -a tagname commit`  Make annotated tag of old commit
+
+- `git tag`  to see the list of tags 
+- `git tag -l "v1.8*"`  see the list of tags matching a pattern
+
+- `git show tagname`  See info about a tag
+
+- `git push origin tagname`  publish tag
+- `git push origin --tags`  publish all tags
+- `git push origin --follow-tags` publish only annotated tags
+
+- `git tag -d tagname`  delete tag in local repo
+- `git push origin --delete tagname`  delete tag in remote
+- `git push origin :refs/tags/tagname`  same than previous 
+
+- `git checkout tagname`  switch to a tag
+- `git checkout -b new_branch tagname`  create new branch from tag
