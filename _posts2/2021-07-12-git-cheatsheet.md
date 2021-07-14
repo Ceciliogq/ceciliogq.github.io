@@ -9,7 +9,7 @@ layout: post
 
 
 ## Table of Contents
-1. [Configurations](#Configurations)
+1. [Configurations](#configurations)
 2. [Create Clone Repo](#create-clone-repo)
 3. [git status](#git-status)
 4. [git add](#git-add)
