@@ -8,14 +8,32 @@ layout: post
 ---
 
 
-# Git Cheatsheet
+## Table of Contents
+1. [Configurations](#Configurations)
+2. [Create Clone Repo](#create-clone-repo)
+3. [git status](#git-status)
+4. [git add](#git-add)
+5. [git commit](#git-commit)
+6. [git log](#git-log)
+7. [git diff](#git-diff)
+8. [git push](#git-push)
+9. [git checkout](#git-checkout)
+10. [git fetch merge pull](#git-fetch-merge-pull)
+11. [git rebase](#git-rebase)
+12. [Branches](#branches)
+13. [Multiple Remotes](#multiple-remotes)
+14. [Submodules](#submodules)
+15. [Undo git merge squash](#undo-git-merge-squash)
+16. [Tags](#tags)
+17. [Animate Git History](#animate-git-history)
 
 Useful links: 
 - [PRO git book (webpage)](https://git-scm.com/book/en/v2)<br/>
 - [Missing semester](https://missing.csail.mit.edu/2020/version-control/)<br/>
 - [Escape School (repo)](https://github.com/escape2020/school2021/tree/main/git) [(lecture)](https://escape2020.github.io/school2021/posts/clase04/)
 
-## Setup configurations
+
+## Configurations
 
 - Tell git who are you, for the log history
 
@@ -43,7 +61,7 @@ Useful links:
 <br/><br/>
 - `git config --global pull.rebase true`  Set `git pull --rebase` as default when doing `git pull`
 
-## Create, Download repo
+## Create Clone Repo
 
 1. Create repo locally:
     - `git init` (inside a folder with repo name. It creates the folder .git)
@@ -143,7 +161,7 @@ Publish the commits on the internet repo
 - `git checkout -b new_branch remote/branchname`  clone remote branch
 - `git branch new_branch` create new branch pointing to current commit
 
-## git fetch, merge, pull
+## git fetch merge pull
 
 - `git fetch`  Bring changes from remote to a local staging area
 - `git merge`  Merge previous changes to default remote/branch (remote, branch can be changed). The commits has are not changed, it add a "merge commit" and the rest are merged in cronological order
@@ -179,7 +197,7 @@ For rewriting the git history: change commit order, drop/edit commits, merge mul
     - `git fetch --all`
     - `git reset --hard origin/master`
 
-## Work with different versions of the same repo (forks)
+## Multiple Remotes
 
 When you want to contribute to an existing project you typically fork that repo into your username and clone your fork. That is your 'origin', but you can other repos and call the whaterver you want. It is common practice to name the second one as 'upstream'.
 
@@ -197,7 +215,7 @@ You can fetch chages from upstream, merge, switch branches and push changes to i
 - `git clone url --recursive`   Clone also the submodules
 - `git submodule update --init --recursive` Update submodules (e.g. if changed on the remote)
 
-## How to undo a git merge (--squas) 
+## Undo git merge squash 
 - `git fetch upstream`  (lscsoft/master)
 - `git show commit1_hash`  This is the commit where my branch diverged from upstream/master after the merge 
 - `git revert commit1_hash`  This will make a series of commit to undo the merge commit
