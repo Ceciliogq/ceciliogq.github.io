@@ -60,6 +60,6 @@
 .highlight .vi { color: #19177C } /* Name.Variable.Instance */
 .highlight .il { color: #666666 } /* Literal.Number.Integer.Long */
 .highlighter-rouge {
-    color: #408080;
-    background-color: #ffffcc;
+    color: crimson;
+    background-color: #f1f1f1;
 }
