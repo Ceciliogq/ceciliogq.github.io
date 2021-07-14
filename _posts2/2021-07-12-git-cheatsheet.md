@@ -10,6 +10,11 @@ layout: post
 
 # Git Cheatsheet
 
+Useful links: 
+- [PRO git book (webpage)](https://git-scm.com/book/en/v2)<br/>
+- [Missing semester](https://missing.csail.mit.edu/2020/version-control/)<br/>
+- [Escape School (repo)](https://github.com/escape2020/school2021/tree/main/git) [(lecture)](https://escape2020.github.io/school2021/posts/clase04/)
+
 ## Setup configurations
 
 - Tell git who are you, for the log history
@@ -26,7 +31,7 @@ layout: post
     - `git config --global init.defaultBranch main`
 <br/><br/>
 - Change style of merge conflicts. 
-    - `git config --global merge.conflicstyle diff3`  Show difference between HEAD, ......???
+    - `git config --global merge.conflicstyle diff3`  Show difference between HEAD, common ancestor and incoming branch
 <br/><br/>
 - Local files not to be under version control. You don't need to skip them in `git add`.
     - Add folder name, files to .gitignore, e.g.:
@@ -228,3 +233,5 @@ There are two types of tags:
 
 - `git checkout tagname`  switch to a tag
 - `git checkout -b new_branch tagname`  create new branch from tag
+
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=5GWVeVw0-Do&t=15s&ab_channel=CecilioGarc%C3%ADa" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
