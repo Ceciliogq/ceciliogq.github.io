@@ -3,7 +3,7 @@ title: HOW TO GIT
 excerpt: >-
   Useful git commands and tricks. Gathered from my experience and from the ESCAPE School. Will continue adding.
 authors: C. García-Quirós
-date: '2021-07-01'
+date: '2021-07-12'
 layout: post
 ---
 
@@ -234,4 +234,17 @@ There are two types of tags:
 - `git checkout tagname`  switch to a tag
 - `git checkout -b new_branch tagname`  create new branch from tag
 
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=5GWVeVw0-Do&t=15s&ab_channel=CecilioGarc%C3%ADa" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+## Animate Git history
+
+With [Gource](https://gource.io/) we can do beautiful animations of the history of a git repository. 
+
+The video below shows the history of the [LALSuite repo](https://git.ligo.org/lscsoft/lalsuite) from 2018 to 2021. The specific command run to produce the video was
+
+```bash
+gource --start-date "2018-01-01" --hide dirnames,filenames --seconds-per-day 0.05 --auto-skip-seconds 1 -1280x720 -o - | ffmpeg -y -r 60 -f image2pipe -vcodec ppm -i - -vcodec libx264 -preset ultrafast -pix_fmt yuv420p -crf 1 -threads 0 -bf 0 gource.mp4.
+```
+
+Enjoy the firecommits!
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5GWVeVw0-Do" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
