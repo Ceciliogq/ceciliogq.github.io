@@ -8,7 +8,7 @@ layout: post
 ---
 
 ## Build webpages locally with jekyll
-Fork the repo [ceciliogq.github.io](https://github.com/Ceciliogq/ceciliogq.github.io)
+Fork the repo [ceciliogq.github.io](https://github.com/Ceciliogq/ceciliogq.github.io).
 
 When using a fresh ubuntu installation I did not have any problem with ruby/bundle/jekyll versions. Following the instructions [here](https://jekyllrb.com/docs/installation/ubuntu/) should work.The previous time I had to tried different versions and had to modify the ruby version in the Gemfile.lock file to make it work.
 
