@@ -34,4 +34,4 @@ This code sets the installation folder of gems. I modified it to `$HOME/Utilites
 
 **Warning:** it takes some time to propagate the changes to the github.io page since githubpages needs to build the site. Refresh browser with `Ctrl+Shift+R`.
 
-## Tips and tricks for the frontend
+## Tips and tricks for the frontendummy
