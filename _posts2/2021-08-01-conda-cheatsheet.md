@@ -19,7 +19,7 @@ Useful links:
 
 - [Official Conda Docs](https://docs.conda.io/projects/conda/en/latest/index.html). Extensive documentation of conda commands and how to manage packages and environments (Tasks section).
 
-Here I will list some of the most useful commands which I have used more frequently.
+Here I will show some of the most useful commands as well as comments about related topics that may be useful when working with conda.
 
 ## Syntax
 The structure of a `conda` command can be decomposed as follows:
@@ -78,7 +78,7 @@ Typically the third version number (build number) is left free so there is freed
 
 - Environments can be created from and exported to YAML files. They have a simple syntax and use identation for indicate nesting.
 
-- We can indicate the name, the channels and the packages to be installed. We can also tell to install packages with pip (which must be a dependency) or include a requirements.txt file with the pip packages.
+- We can indicate the name, the channels and the packages to be installed. We can also tell to install packages with pip (which must be a dependency) or include a requirements.txt file with the pip packages. This is just a column with the package name and the version e.g. `numpy>=1.20`.
 
 - It is good practice to version control the environment.yml files.
 
