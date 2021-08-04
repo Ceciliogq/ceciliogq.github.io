@@ -1,5 +1,5 @@
 ---
-title: About This Site
+title: Jekyll Personal Website
 excerpt: >-
     How I created this site and how you can reproduce it for yourself
 authors: C. García-Quirós
@@ -30,7 +30,7 @@ This code sets the installation folder of gems. I modified it to `$HOME/Utilites
 2. To make the changes available in Stackbit.com editor run the alias [`topreview`](https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases) which add the changes to a "preview" branch that is used by Stackbit.
 3. To actually deploy the changes to github pages run the function [`deploy`](https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases) followed by the commit message. This will enter in `_site` which contains the static html pages and will push to the gh-pages branch. `_site` is itself a git repo, where github pages runs jekyll.
 
-To do everything in one command use the function [`deploy-all`](https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases). It will ask for the commit message and use the same for the `root` repo (step 1) and the `_site` repo (step 3). 
+To do everything in one command use the function [`deploy-all`](https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases). It will ask for the commit message and use the same for the `root` repo (step 1) and the `_site` repo (step 3).
 
 **First time setup**. The setup procedure is kindly explained by [Scripted Tea](https://scriptedtea.com/tech/how-to-deploy-jekyll-to-github/). A basic requirement is that to host the webpage you need to create a repo whose name is `your-username.github.io`. Then in Settings->Pages you can set the branch you want to host, in our case `gh-pages` which contains the html pages.
 

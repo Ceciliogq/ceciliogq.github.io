@@ -1,5 +1,5 @@
 ---
-title: HOW TO GIT
+title: How to Git
 excerpt: >-
   Useful git commands and tricks. Gathered from my experience and from the ESCAPE School. Will continue adding.
 authors: C. García-Quirós
