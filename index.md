@@ -34,7 +34,7 @@ sections:
     posts_number: 4
     actions:
       - label: More Posts
-        url: blog2/index.html
+        url: utilities/index.html
         style: button
 seo:
   title: Home - Cecilio García Quirós
