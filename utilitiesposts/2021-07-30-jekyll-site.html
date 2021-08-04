@@ -2,11 +2,11 @@
 <html lang="en">
     <head>    
         <link rel="icon" type="image/png" href="/images/favicon.png"/>
-        <title>Posts - Cecilio García Quirós</title>
+        <title>About This Site | Cecilio García</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="google" content="notranslate" />
-        <meta name="description" content="Posts of Cecilio García-Quirós" />
+        <meta name="description" content="" />
         
         
         
@@ -75,7 +75,7 @@
               
                 
                 
-                <li class="menu-item current-menu-item">
+                <li class="menu-item">
                   <a href="/utilities/"
                     
                     
@@ -196,112 +196,57 @@
   <div id="content" class="site-content">
     <div class="inner">
       <main id="main" class="site-main">
-          <header class="screen-reader-text">
-    <h1>Posts</h1>
-  </header>
+          <article class="post post-full">
+    <header class="post-header inner-sm">
+      <h1 class="post-title underline">About This Site</h1>
+      
+      
+    </header>
+    
+    
+    <div class="post-content inner-sm">
+      <h2 id="build-webpages-locally-with-jekyll">Build webpages locally with jekyll</h2>
+<p>Fork the repo <a href="https://github.com/Ceciliogq/ceciliogq.github.io">ceciliogq.github.io</a>.</p>
 
-  <div class="post-feed">
-    <div class="post-feed-inside">
-      
-      
-      <article class="post post-card">
-        <div class="post-inside">
-          
-          
-          <header class="post-header">
-            <h2 class="post-title"><a href="/utilitiesposts/2021-08-01-conda-cheatsheet" rel="bookmark">How to Conda</a></h2>
-          </header><!-- .post-header -->
-          
-          
-          <div class="post-content">
-            <p>Useful conda commands and tricks.</p>
-          </div>
-          
-          <footer class="post-meta">
-            <p>C. García-Quirós</p>
-            <p> <a target="_blank" rel=“noreferrer noopener” href="">  </a>
-              <a target="_blank" rel=“noreferrer noopener” href=""> </a>
-            </p>
-            <time class="published"
-              datetime="2021-08-01 00:00">August 01, 2021</time>
-          </footer>
-        </div>
-      </article><!-- .post -->
-      
-      <article class="post post-card">
-        <div class="post-inside">
-          
-          
-          <header class="post-header">
-            <h2 class="post-title"><a href="/utilitiesposts/2021-07-30-jekyll-site" rel="bookmark">About This Site</a></h2>
-          </header><!-- .post-header -->
-          
-          
-          <div class="post-content">
-            <p>How I created this site and how you can reproduce it for yourself</p>
-          </div>
-          
-          <footer class="post-meta">
-            <p>C. García-Quirós</p>
-            <p> <a target="_blank" rel=“noreferrer noopener” href="">  </a>
-              <a target="_blank" rel=“noreferrer noopener” href=""> </a>
-            </p>
-            <time class="published"
-              datetime="2021-07-30 00:00">July 30, 2021</time>
-          </footer>
-        </div>
-      </article><!-- .post -->
-      
-      <article class="post post-card">
-        <div class="post-inside">
-          
-          
-          <header class="post-header">
-            <h2 class="post-title"><a href="/utilitiesposts/2021-07-12-git-cheatsheet" rel="bookmark">HOW TO GIT</a></h2>
-          </header><!-- .post-header -->
-          
-          
-          <div class="post-content">
-            <p>Useful git commands and tricks. Gathered from my experience and from the ESCAPE School. Will continue adding.</p>
-          </div>
-          
-          <footer class="post-meta">
-            <p>C. García-Quirós</p>
-            <p> <a target="_blank" rel=“noreferrer noopener” href="">  </a>
-              <a target="_blank" rel=“noreferrer noopener” href=""> </a>
-            </p>
-            <time class="published"
-              datetime="2021-07-12 00:00">July 12, 2021</time>
-          </footer>
-        </div>
-      </article><!-- .post -->
-      
-      <article class="post post-card">
-        <div class="post-inside">
-          
-          
-          <header class="post-header">
-            <h2 class="post-title"><a href="/utilitiesposts/2021-07-01-hands-on-gw" rel="bookmark">Introduction to Gravitational Wave Data Analysis</a></h2>
-          </header><!-- .post-header -->
-          
-          
-          <div class="post-content">
-            <p>Introduction to the GW libraries gwosc, gwpy and pycbc for performing GW Data Analysis from the Escape Summer School 2021 on Data science for Astronomy, Astroparticle and Particle Physics.</p>
-          </div>
-          
-          <footer class="post-meta">
-            <p>ESCAPE SCHOOL 2021</p>
-            <p> <a target="_blank" rel=“noreferrer noopener” href="https://github.com/escape2020/school2021/blob/main/gravitational_waves/hands_on_gw.ipynb">See on School github  </a>
-              <a target="_blank" rel=“noreferrer noopener” href="https://escape2020.github.io/school2021/">School Website </a>
-            </p>
-            <time class="published"
-              datetime="2021-07-01 00:00">July 01, 2021</time>
-          </footer>
-        </div>
-      </article><!-- .post -->
-      
+<p>When using a fresh ubuntu installation I did not have any problem with ruby/bundle/jekyll versions. Following the instructions <a href="https://jekyllrb.com/docs/installation/ubuntu/">here</a> should work.The previous time I had to tried different versions and had to modify the ruby version in the Gemfile.lock file to make it work.</p>
+
+<ol>
+  <li><code class="highlighter-rouge">sudo apt-get install ruby-full build-essentail zlib1g-dev</code></li>
+  <li>
+    <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s1">'# Install Ruby Gems to ~/gems'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">echo</span> <span class="s1">'export GEM_HOME="$HOME/gems"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">echo</span> <span class="s1">'export PATH="$HOME/gems/bin:$PATH"'</span> <span class="o">&gt;&gt;</span> ~/.bashrc
+<span class="nb">source</span> ~/.bashrc
+</code></pre></div>    </div>
+    <p>This code sets the installation folder of gems. I modified it to <code class="highlighter-rouge">$HOME/Utilites/gems</code> and since now the .bashrc is in the dotfiles it does not need to be added if we use a new machine.</p>
+  </li>
+  <li><code class="highlighter-rouge">gem install jekyll bundler</code></li>
+  <li>At this point, executing <code class="highlighter-rouge">jekyll</code> would throw an error. Since we already have a Gemfile in the github.io repo we do <code class="highlighter-rouge">bundle update</code> to update gem versions (or <code class="highlighter-rouge">bundle install</code> to install dependencies from Gemfile). You may also need to do what the warning message says when running jekyll about using the same bundler version than the lockfile.</li>
+  <li>To generate the html pages do <code class="highlighter-rouge">bundle exec jekyll serve</code> and open link from terminal or refresh it in the web browser.</li>
+</ol>
+
+<h2 id="publish-webpage-on-github-pages">Publish webpage on github pages</h2>
+
+<ol>
+  <li>First we commit the changes to the master branch in the github.io repo.</li>
+  <li>To make the changes available in Stackbit.com editor run the alias <a href="https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases"><code class="highlighter-rouge">topreview</code></a> which add the changes to a “preview” branch that is used by Stackbit.</li>
+  <li>To actually deploy the changes to github pages run the function <a href="https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases"><code class="highlighter-rouge">deploy</code></a> followed by the commit message. This will enter in <code class="highlighter-rouge">_site</code> which contains the static html pages and will push to the gh-pages branch. <code class="highlighter-rouge">_site</code> is itself a git repo, where github pages runs jekyll.</li>
+</ol>
+
+<p>To do everything in one command use the function <a href="https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases"><code class="highlighter-rouge">deploy-all</code></a>. It will ask for the commit message and use the same for the <code class="highlighter-rouge">root</code> repo (step 1) and the <code class="highlighter-rouge">_site</code> repo (step 3).</p>
+
+<p><strong>First time setup</strong>. The setup procedure is kindly explained by <a href="https://scriptedtea.com/tech/how-to-deploy-jekyll-to-github/">Scripted Tea</a>. A basic requirement is that to host the webpage you need to create a repo whose name is <code class="highlighter-rouge">your-username.github.io</code>. Then in Settings-&gt;Pages you can set the branch you want to host, in our case <code class="highlighter-rouge">gh-pages</code> which contains the html pages.</p>
+
+<p><strong>Warning:</strong> it takes some time to propagate the changes to the github.io page since githubpages needs to build the site. Refresh browser with <code class="highlighter-rouge">Ctrl+Shift+R</code>.</p>
+
+<h2 id="tips-and-tricks-for-the-frontend">Tips and tricks for the frontend</h2>
+
     </div>
-  </div><!-- .post-feed -->
+    <footer class="post-meta inner-sm">
+      <time class="published"
+        datetime="2021-07-30 00:00">Friday, July 30, 2021</time>
+    </footer>
+  </article><!-- .post -->
 
       </main><!-- .site-main -->
       <footer id="colophon" class="site-footer inner-sm">
