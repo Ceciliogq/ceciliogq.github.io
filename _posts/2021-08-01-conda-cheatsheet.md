@@ -27,7 +27,7 @@ Conda is a package and environment manager. It allows to install python (and oth
 
 Useful links:
 
-- Official [Conda cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+- [Official Conda cheatsheet](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 
 - [Introduction to Conda for (data) Scientist](https://carpentries-incubator.github.io/introduction-to-conda-for-data-scientists/index.html). Very easy to read and understand the basics.
 
