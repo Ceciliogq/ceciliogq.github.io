@@ -9,7 +9,17 @@ layout: post
 
 Here I will discuss some of the most useful commands as well as comment about related topics that may be useful when working with conda.
 
-# Introduction
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Command Syntax](#command-syntax)
+3. [Managing Environments](#managing-environments)
+4. [Managing Packages](#managing-packages)
+5. [Sharing Environments](#sharing-environments)
+6. [Adding Conda envs to Jupyter](#adding-conda-envs-to-jupyter)
+7. [Installing LALSuite under Conda environments](#installing-lalsuite-under-conda-environments)
+  - [Multiple LAL installations under one Conda environment](#multiple-lal-installations-under-one-conda-environment)
+
+## Introduction
 
 Conda is a package and environment manager. It allows to install python (and other software) packages, and to create environment to isolate all the software dependencies and avoid incompatibilities with other existing software.
 
@@ -25,14 +35,14 @@ Useful links:
 
 
 
-# Command Syntax
+## Command Syntax
 The structure of a `conda` command can be decomposed as follows:
 
 `conda` + `command` + `argument` + `--options`
 
 Sometimes the order of each instruction is not relevant and you can add the options before the argument. <br/>(Disclaimer: I am calling options to what is added with `--something`, but for some commands they are not optional so they are in fact arguments.)
 
-# Managing environments
+## Managing Environments
 - `conda create --name name-of-env packages-of-env` create environment named 'name-of-env' with `packages-of-env` installed. <br/>
 E.g. `conda create --name igwn-py38 python numpy pandas`. <br/>The version of each packages can be added with '=' or '==': `conda create --name igwn-py38 python=3.8 numpy=1.20 pandas=1.3`.<br/>
 Typically the third version number (build number) is left free so there is freedom to add bugfixes and avoid some incompatibilities between other dependencies. <br/>The problem with specifying the versions is that you need to know if those versions are compatible. If not, conda will throw an error and will not create the environment.
@@ -53,7 +63,7 @@ Typically the third version number (build number) is left free so there is freed
 - `conda remove --name name-of-env (--prefix /path/to/env) --all` revome the whole environment (you can also do rm -rf the folder of the env). But be careful not to delete the environment you are currently working on or if you are inside the env folder.
 
 
-# Managing packages
+## Managing Packages
 
 - `conda install package-name(=version.number)`. This will install a new package in the current environemnt, but you can specify in which environment to install it using the `--name` or the `--prefix` options. <br/>E.g. `conda install --name name-of-env panda=1.3`. <br/>You can specify several packages in the same line.
 
@@ -79,7 +89,7 @@ Typically the third version number (build number) is left free so there is freed
 - ***IMPORTANT WARNING***: try not to install anything with `pip --user` or delete your `~/.local` folder. For some weird reason, conda looks for python packages first under `~/.local/lib/python3.8/site-packages` and then looks at the environment specific `~/.conda/envs/your-env/lib/python3.8/site-packages`. This is a very contraintuitive behaviour and quite annoying since we lose the whole point of an environment. I would understand that you use the system's package as last resource, if they are not in the conda environment... <br/> By doing `export PYTHONNOUSERSITE=True` you will skip the `.local` however this will also be true when you do not use conda and you are just using the system's python (all the pip installed packages go to ~.local when using system's pip). There must be a way of adding this environment variable only when activating a conda environment e.g. with .condarc (I haven't found it yet, all the issues have been open for years or closed without a solution...).
 I have just modified my `activate_conda` [alias](https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases) which activate CVMFS's conda and added `export PYTHONNOUSERSITE=True` there. There are other aliases to set and unset `PYTHONNOUSERSITE` but it easier to open a new terminal. There is another alias ([`sys-path`](https://github.com/Ceciliogq/dotfiles/blob/main/.bash_aliases)) to check where python is looking for packages.
 
-# Sharing environments
+## Sharing Environments
 
 - Environments can be created from and exported to YAML files. They have a simple syntax and use identation for indicate nesting.
 
@@ -120,7 +130,7 @@ When using the `--file` option we have to add `env` to the `conda create` comman
 - `conda env create --prefix ./env --file myenv.yml --force` to rebuild the environment from scratch.
 
 
-# Adding Conda envs to Jupyter
+## Adding Conda envs to Jupyter
 
 We do not need to install Jupyter in every conda environment, we can make our jupyter installation be aware of our conda environments:
 
@@ -131,7 +141,7 @@ This command will create a Kernel spec file in JSON format to be used by Jupyter
 - Then you can open Jupyter (from your local installation or from another conda env which has it) and it will show the new kernel in the dropdown menu with the "Env-name" in `--display-name`. Deleting the `~/.local/share/jupyter/kernels/env-name` folder will remove the kernel.
 
 
-# Installing LALSuite under Conda environments
+## Installing LALSuite under Conda environments
 
 The igwn-pyXY environments already provide LALSuite.
 If you need to install your own LAL:
@@ -150,7 +160,7 @@ This will add and replace several folders, files and binaries under `$CONDA_PREF
 
 The `make install` distributes the LAL files in that folder structure.
 
-### Multiple LAL installations under one Conda environment
+#### Multiple LAL installations under one Conda environment
 
 It is recommendable to have one conda environment per LAL installation. However, the `igwn` environments are 12GB in size so it is not practical to have several of them. What I would advise is to create smaller environments, where you install whatever you need just to install LAL (in my case it would be only LALSimulation).
 
