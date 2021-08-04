@@ -7,9 +7,9 @@
   <div class="post-feed">
     <div class="post-feed-inside">
       {% if section.title == 'Recent Publications' %}
-      {% assign display_posts = site.posts | sort: 'date' | reverse %}
+      {% assign display_posts = site.publicationsposts | sort: 'date' | reverse %}
       {% elsif section.title == 'Recent Posts' %}
-      {% assign display_posts = site.utilitiesposts | sort: 'date' | reverse %}
+      {% assign display_posts = site.posts | sort: 'date' | reverse %}
       {% endif %}
       {% assign slice_length = section.posts_number | minus: 0 %}
       {% assign recent_posts = display_posts | slice: 0, slice_length %}
@@ -45,7 +45,7 @@
   {% assign actions_is_not_empty = section.actions | is_not_empty %}
   {% if actions_is_not_empty %}
   <div class="block-buttons inner-sm">
-    
+
     {% include cta_buttons.html actions=section.actions %}
   </div>
   {% endif %}

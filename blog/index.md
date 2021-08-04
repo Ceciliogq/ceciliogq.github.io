@@ -1,7 +1,7 @@
 ---
-title: Publications
+title: Blog
 seo:
-  title: Publications - Cecilio García Quirós
-  description: Publications of Cecilio García-Quirós
+  title: Blog - Cecilio García Quirós
+  description: Blog of Cecilio García-Quirós
 layout: blog
 ---

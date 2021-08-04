@@ -17,12 +17,12 @@
             },
             {
                 "label": "Publications",
-                "url": "/blog/",
+                "url": "/publications/",
                 "style": "link"
             },
             {
-                "label": "Posts",
-                "url": "/utilities/",
+                "label": "Blog",
+                "url": "/blog/",
                 "style": "link"
             },
             {
@@ -52,7 +52,7 @@
                 "style": "icon",
                 "icon_class": "orcid",
                 "new_window": true
-            },            
+            },
             {
                 "label": "GitHub",
                 "url": "https://github.com/ceciliogq",

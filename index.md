@@ -13,38 +13,38 @@ sections:
       *   Postdoctoral Researcher, University of Balearic Islands
       *   LIGO Scientific Collaboration & LISA Consortium
       *   Ph.D. Student, University of Balearic Islands
-            
-      Waveform Phenomenology  <br/> Parameter Estimation <br/>Code Developer <br/> Data Detective <br/> 
-      
+
+      Waveform Phenomenology  <br/> Parameter Estimation <br/>Code Developer <br/> Data Detective <br/>
+
     actions:
       - label: Read Moore
         url: /about
         style: button
-  - section_id: recent-posts
+  - section_id: recent-publications
     type: section_posts
     title: Recent Publications
     posts_number: 4
     actions:
       - label: More Publications
-        url: blog/index.html
+        url: publications/index.html
         style: button
-  - section_id: recent-utilitiesposts
+  - section_id: recent-posts
     type: section_posts
     title: Recent Posts
     posts_number: 4
     actions:
       - label: More Posts
-        url: utilities/index.html
+        url: blog/index.html
         style: button
 seo:
   title: Home - Cecilio García Quirós
   description: Personal website of Dr. Cecilio García Quirós
   extra:
-    - name: 'og:type'
+    - name: 'ogPosts:type'
       value: website
       keyName: property
     - name: 'og:title'
-      value: Cecilio García Quirós 
+      value: Cecilio García Quirós
       keyName: property
     - name: 'og:description'
       value: Personal Website

@@ -7,8 +7,8 @@ plugins:
 collections:
   posts:
      permalink: '/posts/:name'
-  utilitiesposts:
-     permalink: '/utilitiesposts/:name'
+  publicationsposts:
+     permalink: '/publicationsposts/:name'
      output: true
 sass:
   indentWidth: 4
