@@ -28,7 +28,7 @@ sections:
       - label: More Publications
         url: blog/index.html
         style: button
-  - section_id: recent-posts2
+  - section_id: recent-utilitiesposts
     type: section_posts
     title: Recent Posts
     posts_number: 4
