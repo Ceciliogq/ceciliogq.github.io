@@ -27,7 +27,7 @@ layout: post
 16. [Tags](#tags)
 17. [Animate Git History](#animate-git-history)
 
-Useful links: 
+Useful links:
 - [PRO git book (webpage)](https://git-scm.com/book/en/v2)<br/>
 - [Missing semester](https://missing.csail.mit.edu/2020/version-control/)<br/>
 - [Escape School (repo)](https://github.com/escape2020/school2021/tree/main/git) [(lecture)](https://escape2020.github.io/school2021/posts/clase04/)
@@ -48,12 +48,12 @@ Useful links:
 - Change name of default branch to "main"
     - `git config --global init.defaultBranch main`
 <br/><br/>
-- Change style of merge conflicts. 
+- Change style of merge conflicts.
     - `git config --global merge.conflicstyle diff3`  Show difference between HEAD, common ancestor and incoming branch
 <br/><br/>
 - Local files not to be under version control. You don't need to skip them in `git add`.
     - Add folder name, files to .gitignore, e.g.:
-        - build/ 
+        - build/
         - *.so
         - \_\_pycache\_\_/
     - To ignore for all the repositories
@@ -68,7 +68,7 @@ Useful links:
     - To link a new repo to github, create in github a new repo and locally do <br/>
     `git remote add origin git@github.com:Ceciliogq/school2021.git`  (choose the repo name)
 <br/><br/>
-2. Clone existing repository: 
+2. Clone existing repository:
     - `git clone git@github.com:Ceciliogq/school2021.git` (having setup ssh in github first)
     - `git clone repo_address custom_repo_name`   (change repo name when downloading)
     - `git clone repo_address . `  (download all the files in the repo, without the source folder)
@@ -76,7 +76,7 @@ Useful links:
 <br/><br/>
 3. With https you need to enter username and password every time
 <br/><br/>
-4. `rm -rf .git` remove all trace of git. 
+4. `rm -rf .git` remove all trace of git.
 
 ## git status
 
@@ -101,21 +101,21 @@ See the current status of the local repo: modified files, (un-)staged files, unt
 - `git rm filename`  remove a file and put the change in the staged area.
 - Both need to do commit afterwards
 
-## git commit 
+## git commit
 
-- `git commit -m "Commit message" filename`  Will commit the added changes in filename. This will only in your local repo not yet on the internet. Without -m will promt you to write a log message. If the message contains '#number', it will link to the issue 'number' 
+- `git commit -m "Commit message" filename`  Will commit the added changes in filename. This will only in your local repo not yet on the internet. Without -m will promt you to write a log message. If the message contains '#number', it will link to the issue 'number'
 - Modify message of last commit
    - `git commit --amend -m "New message"`  This changes the hash number
    - For pushed commits use `git push --force remotename branchname`
 
-## git log 
+## git log
 
-See history of commits 
+See history of commits
 
 - `git log -N`  Will the last N commits
 - `git log commit1..commit2`  (without spaces). Will show the commits from 1 to 2 including 2. 1 must be previous to 2.
 - `git log --oneline`  Only one line per commit
-- `git log --name-status`  show the name of the files changed 
+- `git log --name-status`  show the name of the files changed
 - `git log -p`  show the code changes of each commit
 - _Pending git log --name-status origin/master.._
 - `git shortlog`  Show the contributors and their commits
@@ -144,12 +144,12 @@ Publish the commits on the internet repo
 
 - `git push` default repo and branch (origin/master). First time `git push -u origin branch`
 - `git push reponame branchname`
-- `git push -f(--force)` force the commits to be published. 
+- `git push -f(--force)` force the commits to be published.
 - `git push origin --delete branchname`  delete the branch remotely
 
 ## git checkout
 
-- `git checkout commit_has` load specific commit 
+- `git checkout commit_has` load specific commit
 - Switching between branches has now changed to `git switch`
    - `git switch branchname`
    - `git switch -c newbranch` create new branch and change to it
@@ -180,6 +180,7 @@ For rewriting the git history: change commit order, drop/edit commits, merge mul
 - `git pull --rebase` = `git fetch` & previous point
 - `git rebase -i commit_hash`  modify a commit interactively
 
+
 ## Branches
 
 - `git branch` see current branches
@@ -204,10 +205,14 @@ When you want to contribute to an existing project you typically fork that repo 
 - To link your local repo to the upstream one:
 `git remote add upstream url_of_desired_repo`
 
-You can fetch chages from upstream, merge, switch branches and push changes to it. 
-   
-- `git remote -v` to see the forks available
+You can fetch chages from upstream, merge, switch branches and push changes to it.
 
+- `git remote -v` to see the forks available
+- `git remote rm upstream`  to remove one fork
+- Move branch from one repo to another:    
+   - `git remote add remoteRepo git@git/https...`
+   - `git checkout branch-to-copy`
+   - `git push reomteRepo`
 
 ## Submodules
 
@@ -215,9 +220,9 @@ You can fetch chages from upstream, merge, switch branches and push changes to i
 - `git clone url --recursive`   Clone also the submodules
 - `git submodule update --init --recursive` Update submodules (e.g. if changed on the remote)
 
-## Undo git merge squash 
+## Undo git merge squash
 - `git fetch upstream`  (lscsoft/master)
-- `git show commit1_hash`  This is the commit where my branch diverged from upstream/master after the merge 
+- `git show commit1_hash`  This is the commit where my branch diverged from upstream/master after the merge
 - `git revert commit1_hash`  This will make a series of commit to undo the merge commit
 - `git rebase -i commit2_hash`  This is the previous to commit1
 - Delete the line of my big merge into master
@@ -226,7 +231,7 @@ You can fetch chages from upstream, merge, switch branches and push changes to i
 - `git add`, `git commit`, `git push -f origin/review-branch`
 
 
-## Tags 
+## Tags
 Tag a specific commit, e.g. for released versions.
 There are two types of tags:
 - Lightweight: only points to a commit
@@ -236,7 +241,7 @@ There are two types of tags:
 - `git tag -a tagname -m "Version v.1"` Annotated
 - `git tag -a tagname commit`  Make annotated tag of old commit
 
-- `git tag`  to see the list of tags 
+- `git tag`  to see the list of tags
 - `git tag -l "v1.8*"`  see the list of tags matching a pattern
 
 - `git show tagname`  See info about a tag
@@ -247,7 +252,7 @@ There are two types of tags:
 
 - `git tag -d tagname`  delete tag in local repo
 - `git push origin --delete tagname`  delete tag in remote
-- `git push origin :refs/tags/tagname`  same than previous 
+- `git push origin :refs/tags/tagname`  same than previous
 
 - `git checkout tagname`  switch to a tag
 - `git checkout -b new_branch tagname`  create new branch from tag
@@ -255,7 +260,7 @@ There are two types of tags:
 
 ## Animate Git history
 
-With [Gource](https://gource.io/) we can do beautiful animations of the history of a git repository. 
+With [Gource](https://gource.io/) we can do beautiful animations of the history of a git repository.
 
 The video below shows the history of the [LALSuite repo](https://git.ligo.org/lscsoft/lalsuite) from 2018 to 2021. The specific command run to produce the video was
 
