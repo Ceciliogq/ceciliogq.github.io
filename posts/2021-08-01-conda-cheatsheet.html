@@ -207,7 +207,22 @@
     <div class="post-content inner-sm">
       <p>Here I will discuss some of the most useful commands as well as comment about related topics that may be useful when working with conda.</p>
 
-<h1 id="introduction">Introduction</h1>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#command-syntax">Command Syntax</a></li>
+  <li><a href="#managing-environments">Managing Environments</a></li>
+  <li><a href="#managing-packages">Managing Packages</a></li>
+  <li><a href="#sharing-environments">Sharing Environments</a></li>
+  <li><a href="#adding-conda-envs-to-jupyter">Adding Conda envs to Jupyter</a></li>
+  <li><a href="#installing-lalsuite-under-conda-environments">Installing LALSuite under Conda environments</a>
+    <ul>
+      <li><a href="#multiple-lal-installations-under-one-conda-environment">Multiple LAL installations under one Conda environment</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="introduction">Introduction</h2>
 
 <p>Conda is a package and environment manager. It allows to install python (and other software) packages, and to create environment to isolate all the software dependencies and avoid incompatibilities with other existing software.</p>
 
@@ -227,14 +242,14 @@
   </li>
 </ul>
 
-<h1 id="command-syntax">Command Syntax</h1>
+<h2 id="command-syntax">Command Syntax</h2>
 <p>The structure of a <code class="highlighter-rouge">conda</code> command can be decomposed as follows:</p>
 
 <p><code class="highlighter-rouge">conda</code> + <code class="highlighter-rouge">command</code> + <code class="highlighter-rouge">argument</code> + <code class="highlighter-rouge">--options</code></p>
 
 <p>Sometimes the order of each instruction is not relevant and you can add the options before the argument. <br />(Disclaimer: I am calling options to what is added with <code class="highlighter-rouge">--something</code>, but for some commands they are not optional so they are in fact arguments.)</p>
 
-<h1 id="managing-environments">Managing environments</h1>
+<h2 id="managing-environments">Managing Environments</h2>
 <ul>
   <li>
     <p><code class="highlighter-rouge">conda create --name name-of-env packages-of-env</code> create environment named ‘name-of-env’ with <code class="highlighter-rouge">packages-of-env</code> installed. <br />
@@ -262,7 +277,7 @@ Typically the third version number (build number) is left free so there is freed
   <li><code class="highlighter-rouge">conda remove --name name-of-env (--prefix /path/to/env) --all</code> revome the whole environment (you can also do rm -rf the folder of the env). But be careful not to delete the environment you are currently working on or if you are inside the env folder.</li>
 </ul>
 
-<h1 id="managing-packages">Managing packages</h1>
+<h2 id="managing-packages">Managing Packages</h2>
 
 <ul>
   <li>
@@ -302,7 +317,7 @@ I have just modified my <code class="highlighter-rouge">activate_conda</code> <a
   </li>
 </ul>
 
-<h1 id="sharing-environments">Sharing environments</h1>
+<h2 id="sharing-environments">Sharing Environments</h2>
 
 <ul>
   <li>
@@ -356,7 +371,7 @@ I have just modified my <code class="highlighter-rouge">activate_conda</code> <a
   </li>
 </ul>
 
-<h1 id="adding-conda-envs-to-jupyter">Adding Conda envs to Jupyter</h1>
+<h2 id="adding-conda-envs-to-jupyter">Adding Conda envs to Jupyter</h2>
 
 <p>We do not need to install Jupyter in every conda environment, we can make our jupyter installation be aware of our conda environments:</p>
 
@@ -368,7 +383,7 @@ This command will create a Kernel spec file in JSON format to be used by Jupyter
   <li>Then you can open Jupyter (from your local installation or from another conda env which has it) and it will show the new kernel in the dropdown menu with the “Env-name” in <code class="highlighter-rouge">--display-name</code>. Deleting the <code class="highlighter-rouge">~/.local/share/jupyter/kernels/env-name</code> folder will remove the kernel.</li>
 </ul>
 
-<h1 id="installing-lalsuite-under-conda-environments">Installing LALSuite under Conda environments</h1>
+<h2 id="installing-lalsuite-under-conda-environments">Installing LALSuite under Conda environments</h2>
 
 <p>The igwn-pyXY environments already provide LALSuite.
 If you need to install your own LAL:</p>
@@ -391,7 +406,7 @@ If you need to install your own LAL:</p>
 
 <p>The <code class="highlighter-rouge">make install</code> distributes the LAL files in that folder structure.</p>
 
-<h3 id="multiple-lal-installations-under-one-conda-environment">Multiple LAL installations under one Conda environment</h3>
+<h4 id="multiple-lal-installations-under-one-conda-environment">Multiple LAL installations under one Conda environment</h4>
 
 <p>It is recommendable to have one conda environment per LAL installation. However, the <code class="highlighter-rouge">igwn</code> environments are 12GB in size so it is not practical to have several of them. What I would advise is to create smaller environments, where you install whatever you need just to install LAL (in my case it would be only LALSimulation).</p>
 
