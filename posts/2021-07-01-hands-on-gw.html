@@ -225,7 +225,7 @@
 <span class="kn">from</span> <span class="nn">numpy.fft</span> <span class="kn">import</span> <span class="o">*</span>
 <span class="n">pretty</span><span class="o">=</span><span class="bp">True</span> <span class="c1">#False
 </span><span class="k">if</span> <span class="n">pretty</span><span class="o">==</span><span class="bp">True</span><span class="p">:</span>
-    <span class="o">%</span><span class="n">matplotlib</span> <span class="n">notebook</span> 
+    <span class="o">%</span><span class="n">matplotlib</span> <span class="n">notebook</span>
 <span class="kn">from</span> <span class="nn">ipywidgets</span> <span class="kn">import</span> <span class="n">interact</span><span class="p">,</span> <span class="n">interactive</span><span class="p">,</span> <span class="n">fixed</span><span class="p">,</span> <span class="n">interact_manual</span>
 <span class="kn">import</span> <span class="nn">matplotlib</span>
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
@@ -284,8 +284,8 @@
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">print</span><span class="p">(</span><span class="s">"List of available catalogs: </span><span class="se">\n</span><span class="s"> </span><span class="se">\n</span><span class="s">"</span><span class="p">,</span> <span class="n">find_datasets</span><span class="p">(</span><span class="nb">type</span><span class="o">=</span><span class="s">"catalog"</span><span class="p">))</span>    <span class="c1"># try other type: "event"
 </span></code></pre></div></div>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of available catalogs: 
- 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>List of available catalogs:
+
  ['GWTC-1-confident', 'GWTC-1-marginal', 'GWTC-2', 'Initial_LIGO_Virgo', 'O1_O2-Preliminary', 'O3_Discovery_Papers', 'O3_IMBH_marginal']
 </code></pre></div></div>
 
@@ -371,7 +371,7 @@ TimeSeries([-1.07863873e-19, -1.06164848e-19, -1.03325326e-19,
 
 <p>GWpy is used to deal with time series and frequency series. The <code class="highlighter-rouge">gwpy.timeseries.timeseries.TimeSeries.plot</code> method allows to directly plot objects from the Timeseries class, with UTC time in the label.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#type(gwpy.frequencyseries.frequencyseries.FrequencySeries) 
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#type(gwpy.frequencyseries.frequencyseries.FrequencySeries)
 </span></code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">#gwpy.timeseries.timeseries.TimeSeries.plot??
@@ -709,7 +709,7 @@ B1 Latitude -0.5573418077694188 Longitude 2.0213821620185053
         <span class="n">itf_color</span><span class="o">=</span><span class="s">'gwpy:ligo-livingston'</span>
     <span class="k">elif</span> <span class="n">ifo</span> <span class="o">==</span> <span class="s">'V1'</span><span class="p">:</span>
         <span class="n">itf_color</span><span class="o">=</span><span class="s">'gwpy:virgo'</span>
-    
+
     <span class="n">plt</span><span class="p">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="n">i_c</span><span class="p">)</span>
     <span class="n">plt</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">smooth</span><span class="p">.</span><span class="n">sample_times</span><span class="p">,</span> <span class="n">smooth</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">ifo</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">itf_color</span><span class="p">)</span>
     <span class="n">plt</span><span class="p">.</span><span class="n">legend</span><span class="p">()</span>
@@ -778,7 +778,7 @@ B1 Latitude -0.5573418077694188 Longitude 2.0213821620185053
 </code></pre></div></div>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plot_all</span> <span class="o">=</span> <span class="n">asd</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s">'Welch avg. ASD from 10 to 1500 Hz'</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">),</span> <span class="n">color</span><span class="o">=</span><span class="s">'gwpy:ligo-livingston'</span><span class="p">)</span>
-<span class="n">ax2</span> <span class="o">=</span> <span class="n">plot_all</span><span class="p">.</span><span class="n">gca</span><span class="p">()</span>           <span class="c1"># get current axis 
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">plot_all</span><span class="p">.</span><span class="n">gca</span><span class="p">()</span>           <span class="c1"># get current axis
 </span><span class="n">ax2</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">asd_h1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'H1'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'gwpy:ligo-hanford'</span><span class="p">)</span>
 <span class="n">ax2</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">asd_v1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'V1'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'gwpy:virgo'</span><span class="p">)</span>
 <span class="n">ax2</span><span class="p">.</span><span class="n">plot</span><span class="p">(</span><span class="n">asd_l1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s">'L1'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s">'gwpy:ligo-livingston'</span><span class="p">)</span>
@@ -845,7 +845,7 @@ NameError: name 'asd' is not defined
     <span class="k">for</span> <span class="n">itf2</span> <span class="ow">in</span> <span class="n">itfs</span><span class="p">[</span><span class="n">ii</span><span class="p">:]:</span>
         <span class="n">tt</span> <span class="o">=</span><span class="n">Detector</span><span class="p">.</span><span class="n">light_travel_time_to_detector</span><span class="p">(</span><span class="n">Detector</span><span class="p">(</span><span class="n">itf1</span><span class="p">),</span> <span class="n">Detector</span><span class="p">(</span><span class="n">itf2</span><span class="p">))</span>
         <span class="k">print</span><span class="p">(</span><span class="s">"Light travel time from {} to {} is {} seconds"</span><span class="p">.</span><span class="nb">format</span><span class="p">(</span><span class="n">itf1</span><span class="p">,</span> <span class="n">itf2</span><span class="p">,</span> <span class="n">tt</span><span class="p">))</span>
-        
+
 </code></pre></div></div>
 
     </div>
