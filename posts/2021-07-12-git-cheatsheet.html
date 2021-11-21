@@ -470,7 +470,17 @@
   <li>Discard local changes and bring remote branch
     <ul>
       <li><code class="highlighter-rouge">git fetch --all</code></li>
-      <li><code class="highlighter-rouge">git reset --hard origin/master</code></li>
+      <li><code class="highlighter-rouge">git reset --hard origin/master</code>
+<br /></li>
+    </ul>
+  </li>
+  <li>Rename Branches
+    <ul>
+      <li><code class="highlighter-rouge">git branch -m &lt;oldname&gt; &lt;newname&gt;</code></li>
+      <li>To rename the current branch <code class="highlighter-rouge">git branch -m &lt;newname&gt;</code></li>
+      <li>To push the local branch and reset the upstream one:
+<code class="highlighter-rouge">git push origin -u &lt;newname&gt;</code></li>
+      <li>Delete the old remote branch <code class="highlighter-rouge">git push origin --delete &lt;oldname&gt;</code></li>
     </ul>
   </li>
 </ul>
