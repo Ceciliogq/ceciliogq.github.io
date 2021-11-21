@@ -337,7 +337,17 @@
   </li>
   <li><code class="highlighter-rouge">git mv oldfilename newfilename</code>  rename a file and put it in the staged area.</li>
   <li><code class="highlighter-rouge">git rm filename</code>  remove a file and put the change in the staged area.</li>
-  <li>Both need to do commit afterwards</li>
+  <li>
+    <p>Both need to do commit afterwards</p>
+  </li>
+  <li>Move local changes to another branch.
+I did some changes but then realized they were in the incorrect branch. Stash the local changes, move to the correct branch, and pop them.
+    <ul>
+      <li><code class="highlighter-rouge">git stash</code></li>
+      <li><code class="highlighter-rouge">git checkout &gt;correct-branch&gt;</code></li>
+      <li><code class="highlighter-rouge">git stash pop</code></li>
+    </ul>
+  </li>
 </ul>
 
 <h2 id="git-commit">git commit</h2>
