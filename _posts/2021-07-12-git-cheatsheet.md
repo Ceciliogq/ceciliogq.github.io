@@ -101,6 +101,12 @@ See the current status of the local repo: modified files, (un-)staged files, unt
 - `git rm filename`  remove a file and put the change in the staged area.
 - Both need to do commit afterwards
 
+- Move local changes to another branch.
+I did some changes but then realized they were in the incorrect branch. Stash the local changes, move to the correct branch, and pop them.
+    - `git stash`
+    - `git checkout >correct-branch>`
+    - `git stash pop`
+
 ## git commit
 
 - `git commit -m "Commit message" filename`  Will commit the added changes in filename. This will only in your local repo not yet on the internet. Without -m will promt you to write a log message. If the message contains '#number', it will link to the issue 'number'
