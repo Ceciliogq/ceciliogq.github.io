@@ -197,6 +197,13 @@ For rewriting the git history: change commit order, drop/edit commits, merge mul
 - Discard local changes and bring remote branch
     - `git fetch --all`
     - `git reset --hard origin/master`
+<br/>
+- Rename Branches
+    - `git branch -m <oldname> <newname>`
+    - To rename the current branch `git branch -m <newname>`
+    - To push the local branch and reset the upstream one:
+      `git push origin -u <newname>`
+    - Delete the old remote branch `git push origin --delete <oldname>`
 
 ## Multiple Remotes
 
