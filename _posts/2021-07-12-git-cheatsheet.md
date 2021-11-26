@@ -227,6 +227,9 @@ You can fetch chages from upstream, merge, switch branches and push changes to i
    - `git checkout branch-to-copy`
    - `git push reomteRepo`
 
+- Set a local branch to track a remote branch. When doing `git pull` it will merge to this remote branch.<br/>
+   `git branch <branch_name> -u <your_new_remote/branch_name>`
+
 ## Submodules
 
 - `git submodule add url path`  Add reference to another repository at a certain commit
