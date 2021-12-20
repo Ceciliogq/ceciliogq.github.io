@@ -7,5 +7,12 @@ date: '2021-12-20'
 layout: post
 ---
 
+## Types of Learning
+  - Supervised: we have a label for the data which tells us the correct solution. E.g.: classificiation (categories), regression (numeric value).
+  - Unsupervised: without labels, learn by itself, find structure in the data, tries to group the data and find correlations.
+  - Reinforcement learning: learn by trial and error, not by example, it is free to experiment.
 
-<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1pNbxP5taReLijKD4eUNlblO7wj6WXUWp&ehbc=2E312F" width="640" height="480"></iframe>
+## Data
+  - Categorical: the prediction you want to get. Mutually excusive. E.g.: cat, dog, ...; male, female.
+  - Ordinal: categories that have an order: poor, satisfactory, good, excellent,
+  - Numeric
