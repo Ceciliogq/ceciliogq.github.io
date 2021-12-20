@@ -1,5 +1,5 @@
 ---
-title: Granada & Alhambra
+title: Granada  Alhambra
 excerpt: >-
   About the beautiful Granada and the Alhambra
 authors: C. García-Quirós
