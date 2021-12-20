@@ -1,9 +1,9 @@
 ---
-title: Machine Learning Notes
+title: Machine Learning Notes 2
 excerpt: >-
-  Notes on machine learning
+  Notes on machine learning 2
 authors: C. García-Quirós
-date: '2021-08-05'
+date: '2021-12-20'
 layout: post
 ---
 
