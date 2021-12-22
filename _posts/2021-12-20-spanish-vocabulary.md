@@ -31,4 +31,5 @@ layout: post
 - Sura, helia o aleya: capítulo, versículo del corán.
 - Piezas de los mocárabes: medio cuadrado, conza (raíz 2), dumbaque (triángulo) y jaira (rombo). Cuando se recortan por la parte inferior se llaman adarajas.
 - Vano: distancia libre entre dos soportes, por ejemplo entre los pilares de un puente.
-- Artesa: recipiente para amasar el pan. ![image](/images/artesa.jpeg)
+- Artesa: recipiente para amasar el pan.
+![image](/images/artesa.jpeg)
