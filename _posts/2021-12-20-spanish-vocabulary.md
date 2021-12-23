@@ -33,3 +33,12 @@ layout: post
 - Vano: distancia libre entre dos soportes, por ejemplo entre los pilares de un puente.
 - Artesa: recipiente para amasar el pan.
 ![image](/images/artesa.jpeg)
+- Etéreo: relativo al cielo.
+- Malear: dañar, echar a perder algo.
+- Incólume: sano, sin lesión.
+- Paramento: adorno o atavío con que se cubre algo.
+- Imposta, dovela, clave, flecha.<br/>
+![image](/images/imposta.jpg)<br/>
+Image credit: [masdearte](https://masdearte.com/especiales/dinteles-bovedas-y-arcos-una-guia-en-el-dia-mundial-de-la-arquitectura/)
+- Alfarje: techo con maderas labradas entrelazadas artísticamente.
+- Alfiz: recuadro del arco árabe, que envuelve las albanegas y arranca bien desde las impostas, bien desde el suelo.
