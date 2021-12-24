@@ -42,3 +42,6 @@ layout: post
 Image credit: [masdearte](https://masdearte.com/especiales/dinteles-bovedas-y-arcos-una-guia-en-el-dia-mundial-de-la-arquitectura/)
 - Alfarje: techo con maderas labradas entrelazadas artísticamente.
 - Alfiz: recuadro del arco árabe, que envuelve las albanegas y arranca bien desde las impostas, bien desde el suelo.
+- Albanega: espacio triangular entre el arco y el recuadro.
+![image](/images/albanega.jpg)
+- Alfanje: sable corto y curvo. También pez espada.
