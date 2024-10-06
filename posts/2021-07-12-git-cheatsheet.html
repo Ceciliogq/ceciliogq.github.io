@@ -240,8 +240,8 @@
     <p>Tell git who are you, for the log history</p>
 
     <ul>
-      <li><code class="highlighter-rouge">git config --global usern.name "Cecilio García"</code></li>
-      <li><code class="highlighter-rouge">git config --global user.email "ceciliogarciaquiros@gmail.com"</code>
+      <li><code class="language-plaintext highlighter-rouge">git config --global usern.name "Cecilio García"</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git config --global user.email "ceciliogarciaquiros@gmail.com"</code>
 <br /><br /></li>
     </ul>
   </li>
@@ -249,24 +249,24 @@
     <p>Modify the editor used by git for the commit message</p>
 
     <ul>
-      <li><code class="highlighter-rouge">git config --global core.editor "code --wait"</code> Use visual studio code</li>
-      <li><code class="highlighter-rouge">git config --global core.editor nano</code>        Use nano
+      <li><code class="language-plaintext highlighter-rouge">git config --global core.editor "code --wait"</code> Use visual studio code</li>
+      <li><code class="language-plaintext highlighter-rouge">git config --global core.editor nano</code>        Use nano
 <br /><br /></li>
     </ul>
   </li>
   <li>Change name of default branch to “main”
     <ul>
-      <li><code class="highlighter-rouge">git config --global init.defaultBranch main</code>
+      <li><code class="language-plaintext highlighter-rouge">git config --global init.defaultBranch main</code>
 <br /><br /></li>
     </ul>
   </li>
   <li>Change style of merge conflicts.
     <ul>
-      <li><code class="highlighter-rouge">git config --global merge.conflicstyle diff3</code>  Show difference between HEAD, common ancestor and incoming branch
+      <li><code class="language-plaintext highlighter-rouge">git config --global merge.conflicstyle diff3</code>  Show difference between HEAD, common ancestor and incoming branch
 <br /><br /></li>
     </ul>
   </li>
-  <li>Local files not to be under version control. You don’t need to skip them in <code class="highlighter-rouge">git add</code>.
+  <li>Local files not to be under version control. You don’t need to skip them in <code class="language-plaintext highlighter-rouge">git add</code>.
     <ul>
       <li>Add folder name, files to .gitignore, e.g.:
         <ul>
@@ -277,13 +277,13 @@
       </li>
       <li>To ignore for all the repositories
         <ul>
-          <li><code class="highlighter-rouge">git config --global core.excludesfiles $HOME/.gitignore</code> put in $HOME/.gitignore those files to be globally ignored. E.g.: __MACOSX, .DS_STORE, *.swp, *~
+          <li><code class="language-plaintext highlighter-rouge">git config --global core.excludesfiles $HOME/.gitignore</code> put in $HOME/.gitignore those files to be globally ignored. E.g.: __MACOSX, .DS_STORE, *.swp, *~
 <br /><br /></li>
         </ul>
       </li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">git config --global pull.rebase true</code>  Set <code class="highlighter-rouge">git pull --rebase</code> as default when doing <code class="highlighter-rouge">git pull</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git config --global pull.rebase true</code>  Set <code class="language-plaintext highlighter-rouge">git pull --rebase</code> as default when doing <code class="language-plaintext highlighter-rouge">git pull</code></li>
 </ul>
 
 <h2 id="create-clone-repo">Create Clone Repo</h2>
@@ -291,24 +291,24 @@
 <ol>
   <li>Create repo locally:
     <ul>
-      <li><code class="highlighter-rouge">git init</code> (inside a folder with repo name. It creates the folder .git)</li>
+      <li><code class="language-plaintext highlighter-rouge">git init</code> (inside a folder with repo name. It creates the folder .git)</li>
       <li>To link a new repo to github, create in github a new repo and locally do <br />
- <code class="highlighter-rouge">git remote add origin git@github.com:Ceciliogq/school2021.git</code>  (choose the repo name)
+ <code class="language-plaintext highlighter-rouge">git remote add origin git@github.com:Ceciliogq/school2021.git</code>  (choose the repo name)
 <br /><br /></li>
     </ul>
   </li>
   <li>Clone existing repository:
     <ul>
-      <li><code class="highlighter-rouge">git clone git@github.com:Ceciliogq/school2021.git</code> (having setup ssh in github first)</li>
-      <li><code class="highlighter-rouge">git clone repo_address custom_repo_name</code>   (change repo name when downloading)</li>
-      <li><code class="highlighter-rouge">git clone repo_address . </code>  (download all the files in the repo, without the source folder)</li>
-      <li><code class="highlighter-rouge">git clone -b branch_name repo_address</code>   (clone only one branch)
+      <li><code class="language-plaintext highlighter-rouge">git clone git@github.com:Ceciliogq/school2021.git</code> (having setup ssh in github first)</li>
+      <li><code class="language-plaintext highlighter-rouge">git clone repo_address custom_repo_name</code>   (change repo name when downloading)</li>
+      <li><code class="language-plaintext highlighter-rouge">git clone repo_address . </code>  (download all the files in the repo, without the source folder)</li>
+      <li><code class="language-plaintext highlighter-rouge">git clone -b branch_name repo_address</code>   (clone only one branch)
 <br /><br /></li>
     </ul>
   </li>
   <li>With https you need to enter username and password every time
 <br /><br /></li>
-  <li><code class="highlighter-rouge">rm -rf .git</code> remove all trace of git.</li>
+  <li><code class="language-plaintext highlighter-rouge">rm -rf .git</code> remove all trace of git.</li>
 </ol>
 
 <h2 id="git-status">git status</h2>
@@ -316,36 +316,36 @@
 <p>See the current status of the local repo: modified files, (un-)staged files, untracked files, etc.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">git status -s</code> will show a reduced version, with one line per file. To the left, a coloured letter will tell the status of the file.</li>
+  <li><code class="language-plaintext highlighter-rouge">git status -s</code> will show a reduced version, with one line per file. To the left, a coloured letter will tell the status of the file.</li>
 </ul>
 
 <h2 id="git-add">git add</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">git add filename</code> Add one file to the staged area</li>
-  <li><code class="highlighter-rouge">git add . </code>  Add all the files, tracked and untracked in the current folder</li>
-  <li><code class="highlighter-rouge">git add -u</code>  Add all the modified files which are tracked</li>
-  <li><code class="highlighter-rouge">git add -p(--ptach)</code>    It allows you to choose wich junks of code wants to add. E.g. if a file contains changes that should belong to different commits.</li>
-  <li><code class="highlighter-rouge">git add foldername ':!*.h5'</code>  add folder except some kind of files</li>
+  <li><code class="language-plaintext highlighter-rouge">git add filename</code> Add one file to the staged area</li>
+  <li><code class="language-plaintext highlighter-rouge">git add . </code>  Add all the files, tracked and untracked in the current folder</li>
+  <li><code class="language-plaintext highlighter-rouge">git add -u</code>  Add all the modified files which are tracked</li>
+  <li><code class="language-plaintext highlighter-rouge">git add -p(--ptach)</code>    It allows you to choose wich junks of code wants to add. E.g. if a file contains changes that should belong to different commits.</li>
+  <li><code class="language-plaintext highlighter-rouge">git add foldername ':!*.h5'</code>  add folder except some kind of files</li>
   <li>
-    <p><code class="highlighter-rouge">git add _</code>  Something when there is a merge conflict???</p>
+    <p><code class="language-plaintext highlighter-rouge">git add _</code>  Something when there is a merge conflict???</p>
   </li>
-  <li><code class="highlighter-rouge">git reset filename</code>  Remove file from the staged area. (You added the wrong file e.g.)</li>
+  <li><code class="language-plaintext highlighter-rouge">git reset filename</code>  Remove file from the staged area. (You added the wrong file e.g.)</li>
   <li>
-    <p>A alternative is doing <code class="highlighter-rouge">git restore --staged filename</code>
+    <p>A alternative is doing <code class="language-plaintext highlighter-rouge">git restore --staged filename</code>
 <br /></p>
   </li>
-  <li><code class="highlighter-rouge">git mv oldfilename newfilename</code>  rename a file and put it in the staged area.</li>
-  <li><code class="highlighter-rouge">git rm filename</code>  remove a file and put the change in the staged area.</li>
+  <li><code class="language-plaintext highlighter-rouge">git mv oldfilename newfilename</code>  rename a file and put it in the staged area.</li>
+  <li><code class="language-plaintext highlighter-rouge">git rm filename</code>  remove a file and put the change in the staged area.</li>
   <li>
     <p>Both need to do commit afterwards</p>
   </li>
   <li>Move local changes to another branch.
 I did some changes but then realized they were in the incorrect branch. Stash the local changes, move to the correct branch, and pop them.
     <ul>
-      <li><code class="highlighter-rouge">git stash</code></li>
-      <li><code class="highlighter-rouge">git checkout &gt;correct-branch&gt;</code></li>
-      <li><code class="highlighter-rouge">git stash pop</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git stash</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git checkout &gt;correct-branch&gt;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git stash pop</code></li>
     </ul>
   </li>
 </ul>
@@ -353,11 +353,11 @@ I did some changes but then realized they were in the incorrect branch. Stash th
 <h2 id="git-commit">git commit</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">git commit -m "Commit message" filename</code>  Will commit the added changes in filename. This will only in your local repo not yet on the internet. Without -m will promt you to write a log message. If the message contains ‘#number’, it will link to the issue ‘number’</li>
+  <li><code class="language-plaintext highlighter-rouge">git commit -m "Commit message" filename</code>  Will commit the added changes in filename. This will only in your local repo not yet on the internet. Without -m will promt you to write a log message. If the message contains ‘#number’, it will link to the issue ‘number’</li>
   <li>Modify message of last commit
     <ul>
-      <li><code class="highlighter-rouge">git commit --amend -m "New message"</code>  This changes the hash number</li>
-      <li>For pushed commits use <code class="highlighter-rouge">git push --force remotename branchname</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git commit --amend -m "New message"</code>  This changes the hash number</li>
+      <li>For pushed commits use <code class="language-plaintext highlighter-rouge">git push --force remotename branchname</code></li>
     </ul>
   </li>
 </ul>
@@ -367,25 +367,25 @@ I did some changes but then realized they were in the incorrect branch. Stash th
 <p>See history of commits</p>
 
 <ul>
-  <li><code class="highlighter-rouge">git log -N</code>  Will the last N commits</li>
-  <li><code class="highlighter-rouge">git log commit1..commit2</code>  (without spaces). Will show the commits from 1 to 2 including 2. 1 must be previous to 2.</li>
-  <li><code class="highlighter-rouge">git log --oneline</code>  Only one line per commit</li>
-  <li><code class="highlighter-rouge">git log --name-status</code>  show the name of the files changed</li>
-  <li><code class="highlighter-rouge">git log -p</code>  show the code changes of each commit</li>
+  <li><code class="language-plaintext highlighter-rouge">git log -N</code>  Will the last N commits</li>
+  <li><code class="language-plaintext highlighter-rouge">git log commit1..commit2</code>  (without spaces). Will show the commits from 1 to 2 including 2. 1 must be previous to 2.</li>
+  <li><code class="language-plaintext highlighter-rouge">git log --oneline</code>  Only one line per commit</li>
+  <li><code class="language-plaintext highlighter-rouge">git log --name-status</code>  show the name of the files changed</li>
+  <li><code class="language-plaintext highlighter-rouge">git log -p</code>  show the code changes of each commit</li>
   <li><em>Pending git log –name-status origin/master..</em></li>
-  <li><code class="highlighter-rouge">git shortlog</code>  Show the contributors and their commits
+  <li><code class="language-plaintext highlighter-rouge">git shortlog</code>  Show the contributors and their commits
     <ul>
-      <li><code class="highlighter-rouge">-s</code>only shows the number of commits</li>
-      <li><code class="highlighter-rouge">-n</code> ordered by number of commits</li>
-      <li><code class="highlighter-rouge">-e</code>  add the email</li>
-      <li>Can be combined as <code class="highlighter-rouge">-sne</code></li>
+      <li><code class="language-plaintext highlighter-rouge">-s</code>only shows the number of commits</li>
+      <li><code class="language-plaintext highlighter-rouge">-n</code> ordered by number of commits</li>
+      <li><code class="language-plaintext highlighter-rouge">-e</code>  add the email</li>
+      <li>Can be combined as <code class="language-plaintext highlighter-rouge">-sne</code></li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">git log --all --decorate --graph</code>  shows a drawing of the tree structure of commits
+  <li><code class="language-plaintext highlighter-rouge">git log --all --decorate --graph</code>  shows a drawing of the tree structure of commits
     <ul>
-      <li><code class="highlighter-rouge">--decorate</code> shows special tags of commits like HEAD</li>
-      <li><code class="highlighter-rouge">--all</code> shows all the refs in .git/refs as commit</li>
-      <li><code class="highlighter-rouge">--graph</code> show drawing of commit relations</li>
+      <li><code class="language-plaintext highlighter-rouge">--decorate</code> shows special tags of commits like HEAD</li>
+      <li><code class="language-plaintext highlighter-rouge">--all</code> shows all the refs in .git/refs as commit</li>
+      <li><code class="language-plaintext highlighter-rouge">--graph</code> show drawing of commit relations</li>
     </ul>
   </li>
 </ul>
@@ -395,11 +395,11 @@ I did some changes but then realized they were in the incorrect branch. Stash th
 <p>See difference between working directory and staging area.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">git diff --staged</code>  See what is going to be committed</li>
-  <li><code class="highlighter-rouge">git diff branch1 branch2</code> or <code class="highlighter-rouge">file1 file2</code> difference between branches, files, commits, etc.</li>
+  <li><code class="language-plaintext highlighter-rouge">git diff --staged</code>  See what is going to be committed</li>
+  <li><code class="language-plaintext highlighter-rouge">git diff branch1 branch2</code> or <code class="language-plaintext highlighter-rouge">file1 file2</code> difference between branches, files, commits, etc.</li>
   <li>Save git diff in file and see in color</li>
-  <li><code class="highlighter-rouge">git diff --color source_file &gt; output.txt</code></li>
-  <li><code class="highlighter-rouge">less -R output.txt</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git diff --color source_file &gt; output.txt</code></li>
+  <li><code class="language-plaintext highlighter-rouge">less -R output.txt</code></li>
 </ul>
 
 <h2 id="git-push">git push</h2>
@@ -407,43 +407,43 @@ I did some changes but then realized they were in the incorrect branch. Stash th
 <p>Publish the commits on the internet repo</p>
 
 <ul>
-  <li><code class="highlighter-rouge">git push</code> default repo and branch (origin/master). First time <code class="highlighter-rouge">git push -u origin branch</code></li>
-  <li><code class="highlighter-rouge">git push reponame branchname</code></li>
-  <li><code class="highlighter-rouge">git push -f(--force)</code> force the commits to be published.</li>
-  <li><code class="highlighter-rouge">git push origin --delete branchname</code>  delete the branch remotely</li>
+  <li><code class="language-plaintext highlighter-rouge">git push</code> default repo and branch (origin/master). First time <code class="language-plaintext highlighter-rouge">git push -u origin branch</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git push reponame branchname</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git push -f(--force)</code> force the commits to be published.</li>
+  <li><code class="language-plaintext highlighter-rouge">git push origin --delete branchname</code>  delete the branch remotely</li>
 </ul>
 
 <h2 id="git-checkout">git checkout</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">git checkout commit_has</code> load specific commit</li>
-  <li>Switching between branches has now changed to <code class="highlighter-rouge">git switch</code>
+  <li><code class="language-plaintext highlighter-rouge">git checkout commit_has</code> load specific commit</li>
+  <li>Switching between branches has now changed to <code class="language-plaintext highlighter-rouge">git switch</code>
     <ul>
-      <li><code class="highlighter-rouge">git switch branchname</code></li>
-      <li><code class="highlighter-rouge">git switch -c newbranch</code> create new branch and change to it</li>
-      <li><code class="highlighter-rouge">git switch -c newbranch upstream/master</code>  create new branch from another branch</li>
+      <li><code class="language-plaintext highlighter-rouge">git switch branchname</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git switch -c newbranch</code> create new branch and change to it</li>
+      <li><code class="language-plaintext highlighter-rouge">git switch -c newbranch upstream/master</code>  create new branch from another branch</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">git checkout hash -- filename</code>  get back a commit for a specific file</li>
-  <li>This has now been replaced by <code class="highlighter-rouge">git restore</code>
+  <li><code class="language-plaintext highlighter-rouge">git checkout hash -- filename</code>  get back a commit for a specific file</li>
+  <li>This has now been replaced by <code class="language-plaintext highlighter-rouge">git restore</code>
     <ul>
-      <li><code class="highlighter-rouge">git restore filename</code>  get last commit for a file, discard all the changes</li>
-      <li><code class="highlighter-rouge">git restore --source=hash or branch filename</code>  restore a file to a specific commit or branch</li>
+      <li><code class="language-plaintext highlighter-rouge">git restore filename</code>  get last commit for a file, discard all the changes</li>
+      <li><code class="language-plaintext highlighter-rouge">git restore --source=hash or branch filename</code>  restore a file to a specific commit or branch</li>
     </ul>
   </li>
-  <li><code class="highlighter-rouge">git checkout -b new_branch remote/branchname</code>  clone remote branch</li>
-  <li><code class="highlighter-rouge">git branch new_branch</code> create new branch pointing to current commit</li>
+  <li><code class="language-plaintext highlighter-rouge">git checkout -b new_branch remote/branchname</code>  clone remote branch</li>
+  <li><code class="language-plaintext highlighter-rouge">git branch new_branch</code> create new branch pointing to current commit</li>
 </ul>
 
 <h2 id="git-fetch-merge-pull">git fetch merge pull</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">git fetch</code>  Bring changes from remote to a local staging area</li>
-  <li><code class="highlighter-rouge">git merge</code>  Merge previous changes to default remote/branch (remote, branch can be changed). The commits has are not changed, it add a “merge commit” and the rest are merged in cronological order</li>
-  <li><code class="highlighter-rouge">git merge branch_to_be_merged</code>  This will include the changes in “branch_to_be_merged” into the current branch where you are “checkout”</li>
-  <li><code class="highlighter-rouge">git merge --squas</code>  Squash all the commits in one single merge commit</li>
-  <li><code class="highlighter-rouge">git pull</code> = <code class="highlighter-rouge">git fetch</code> + <code class="highlighter-rouge">git merge default/default</code></li>
-  <li><code class="highlighter-rouge">git pull remote branch</code> pull specific fork and branch</li>
+  <li><code class="language-plaintext highlighter-rouge">git fetch</code>  Bring changes from remote to a local staging area</li>
+  <li><code class="language-plaintext highlighter-rouge">git merge</code>  Merge previous changes to default remote/branch (remote, branch can be changed). The commits has are not changed, it add a “merge commit” and the rest are merged in cronological order</li>
+  <li><code class="language-plaintext highlighter-rouge">git merge branch_to_be_merged</code>  This will include the changes in “branch_to_be_merged” into the current branch where you are “checkout”</li>
+  <li><code class="language-plaintext highlighter-rouge">git merge --squas</code>  Squash all the commits in one single merge commit</li>
+  <li><code class="language-plaintext highlighter-rouge">git pull</code> = <code class="language-plaintext highlighter-rouge">git fetch</code> + <code class="language-plaintext highlighter-rouge">git merge default/default</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git pull remote branch</code> pull specific fork and branch</li>
 </ul>
 
 <h2 id="git-rebase">git rebase</h2>
@@ -451,46 +451,46 @@ I did some changes but then realized they were in the incorrect branch. Stash th
 <p>For rewriting the git history: change commit order, drop/edit commits, merge multiple commits into one.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">git rebase branch1 branch2</code> it will put the commits of branch2 on top of branch1</li>
-  <li><code class="highlighter-rouge">git rebase remote/branch</code>  it takes the history of remote/branch and will add the local changes (commits) on top</li>
-  <li><code class="highlighter-rouge">git pull --rebase</code> = <code class="highlighter-rouge">git fetch</code> &amp; previous point</li>
-  <li><code class="highlighter-rouge">git rebase -i commit_hash</code>  modify a commit interactively</li>
+  <li><code class="language-plaintext highlighter-rouge">git rebase branch1 branch2</code> it will put the commits of branch2 on top of branch1</li>
+  <li><code class="language-plaintext highlighter-rouge">git rebase remote/branch</code>  it takes the history of remote/branch and will add the local changes (commits) on top</li>
+  <li><code class="language-plaintext highlighter-rouge">git pull --rebase</code> = <code class="language-plaintext highlighter-rouge">git fetch</code> &amp; previous point</li>
+  <li><code class="language-plaintext highlighter-rouge">git rebase -i commit_hash</code>  modify a commit interactively</li>
 </ul>
 
 <h2 id="branches">Branches</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">git branch</code> see current branches
+  <li><code class="language-plaintext highlighter-rouge">git branch</code> see current branches
 <br /></li>
   <li>Get branch from merge request
     <ul>
-      <li><code class="highlighter-rouge">git fetch upstream merge-requests/id/head:new_branch</code></li>
-      <li><code class="highlighter-rouge">git checkout new_branch</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git fetch upstream merge-requests/id/head:new_branch</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git checkout new_branch</code></li>
       <li>id is the number of the MR and new_branch the name I give to the new branch
 <br /></li>
     </ul>
   </li>
   <li>Delete branches
     <ul>
-      <li><code class="highlighter-rouge">git branch -d localBranchName</code>  delete local branch</li>
-      <li><code class="highlighter-rouge">git push origin --delete remoteBranchName</code>  delete branch remotely
+      <li><code class="language-plaintext highlighter-rouge">git branch -d localBranchName</code>  delete local branch</li>
+      <li><code class="language-plaintext highlighter-rouge">git push origin --delete remoteBranchName</code>  delete branch remotely
 <br /></li>
     </ul>
   </li>
   <li>Discard local changes and bring remote branch
     <ul>
-      <li><code class="highlighter-rouge">git fetch --all</code></li>
-      <li><code class="highlighter-rouge">git reset --hard origin/master</code>
+      <li><code class="language-plaintext highlighter-rouge">git fetch --all</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git reset --hard origin/master</code>
 <br /></li>
     </ul>
   </li>
   <li>Rename Branches
     <ul>
-      <li><code class="highlighter-rouge">git branch -m &lt;oldname&gt; &lt;newname&gt;</code></li>
-      <li>To rename the current branch <code class="highlighter-rouge">git branch -m &lt;newname&gt;</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git branch -m &lt;oldname&gt; &lt;newname&gt;</code></li>
+      <li>To rename the current branch <code class="language-plaintext highlighter-rouge">git branch -m &lt;newname&gt;</code></li>
       <li>To push the local branch and reset the upstream one:
-<code class="highlighter-rouge">git push origin -u &lt;newname&gt;</code></li>
-      <li>Delete the old remote branch <code class="highlighter-rouge">git push origin --delete &lt;oldname&gt;</code></li>
+<code class="language-plaintext highlighter-rouge">git push origin -u &lt;newname&gt;</code></li>
+      <li>Delete the old remote branch <code class="language-plaintext highlighter-rouge">git push origin --delete &lt;oldname&gt;</code></li>
     </ul>
   </li>
 </ul>
@@ -501,43 +501,43 @@ I did some changes but then realized they were in the incorrect branch. Stash th
 
 <ul>
   <li>To link your local repo to the upstream one:
-<code class="highlighter-rouge">git remote add upstream url_of_desired_repo</code></li>
+<code class="language-plaintext highlighter-rouge">git remote add upstream url_of_desired_repo</code></li>
 </ul>
 
 <p>You can fetch chages from upstream, merge, switch branches and push changes to it.</p>
 
 <ul>
-  <li><code class="highlighter-rouge">git remote -v</code> to see the forks available</li>
-  <li><code class="highlighter-rouge">git remote rm upstream</code>  to remove one fork</li>
+  <li><code class="language-plaintext highlighter-rouge">git remote -v</code> to see the forks available</li>
+  <li><code class="language-plaintext highlighter-rouge">git remote rm upstream</code>  to remove one fork</li>
   <li>Move branch from one repo to another:
     <ul>
-      <li><code class="highlighter-rouge">git remote add remoteRepo git@git/https...</code></li>
-      <li><code class="highlighter-rouge">git checkout branch-to-copy</code></li>
-      <li><code class="highlighter-rouge">git push reomteRepo</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git remote add remoteRepo git@git/https...</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git checkout branch-to-copy</code></li>
+      <li><code class="language-plaintext highlighter-rouge">git push reomteRepo</code></li>
     </ul>
   </li>
-  <li>Set a local branch to track a remote branch. When doing <code class="highlighter-rouge">git pull</code> it will merge to this remote branch.<br />
- <code class="highlighter-rouge">git branch &lt;branch_name&gt; -u &lt;your_new_remote/branch_name&gt;</code></li>
+  <li>Set a local branch to track a remote branch. When doing <code class="language-plaintext highlighter-rouge">git pull</code> it will merge to this remote branch.<br />
+ <code class="language-plaintext highlighter-rouge">git branch &lt;branch_name&gt; -u &lt;your_new_remote/branch_name&gt;</code></li>
 </ul>
 
 <h2 id="submodules">Submodules</h2>
 
 <ul>
-  <li><code class="highlighter-rouge">git submodule add url path</code>  Add reference to another repository at a certain commit</li>
-  <li><code class="highlighter-rouge">git clone url --recursive</code>   Clone also the submodules</li>
-  <li><code class="highlighter-rouge">git submodule update --init --recursive</code> Update submodules (e.g. if changed on the remote)</li>
+  <li><code class="language-plaintext highlighter-rouge">git submodule add url path</code>  Add reference to another repository at a certain commit</li>
+  <li><code class="language-plaintext highlighter-rouge">git clone url --recursive</code>   Clone also the submodules</li>
+  <li><code class="language-plaintext highlighter-rouge">git submodule update --init --recursive</code> Update submodules (e.g. if changed on the remote)</li>
 </ul>
 
 <h2 id="undo-git-merge-squash">Undo git merge squash</h2>
 <ul>
-  <li><code class="highlighter-rouge">git fetch upstream</code>  (lscsoft/master)</li>
-  <li><code class="highlighter-rouge">git show commit1_hash</code>  This is the commit where my branch diverged from upstream/master after the merge</li>
-  <li><code class="highlighter-rouge">git revert commit1_hash</code>  This will make a series of commit to undo the merge commit</li>
-  <li><code class="highlighter-rouge">git rebase -i commit2_hash</code>  This is the previous to commit1</li>
+  <li><code class="language-plaintext highlighter-rouge">git fetch upstream</code>  (lscsoft/master)</li>
+  <li><code class="language-plaintext highlighter-rouge">git show commit1_hash</code>  This is the commit where my branch diverged from upstream/master after the merge</li>
+  <li><code class="language-plaintext highlighter-rouge">git revert commit1_hash</code>  This will make a series of commit to undo the merge commit</li>
+  <li><code class="language-plaintext highlighter-rouge">git rebase -i commit2_hash</code>  This is the previous to commit1</li>
   <li>Delete the line of my big merge into master</li>
-  <li><code class="highlighter-rouge">git merge upstream/master</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git merge upstream/master</code></li>
   <li>Solve conflicts if any</li>
-  <li><code class="highlighter-rouge">git add</code>, <code class="highlighter-rouge">git commit</code>, <code class="highlighter-rouge">git push -f origin/review-branch</code></li>
+  <li><code class="language-plaintext highlighter-rouge">git add</code>, <code class="language-plaintext highlighter-rouge">git commit</code>, <code class="language-plaintext highlighter-rouge">git push -f origin/review-branch</code></li>
 </ul>
 
 <h2 id="tags">Tags</h2>
@@ -548,30 +548,30 @@ There are two types of tags:</p>
   <li>
     <p>Annotated: include more info like a messages and the tagger’s info</p>
   </li>
-  <li><code class="highlighter-rouge">git tag tagname</code> Lightweight</li>
-  <li><code class="highlighter-rouge">git tag -a tagname -m "Version v.1"</code> Annotated</li>
+  <li><code class="language-plaintext highlighter-rouge">git tag tagname</code> Lightweight</li>
+  <li><code class="language-plaintext highlighter-rouge">git tag -a tagname -m "Version v.1"</code> Annotated</li>
   <li>
-    <p><code class="highlighter-rouge">git tag -a tagname commit</code>  Make annotated tag of old commit</p>
+    <p><code class="language-plaintext highlighter-rouge">git tag -a tagname commit</code>  Make annotated tag of old commit</p>
   </li>
-  <li><code class="highlighter-rouge">git tag</code>  to see the list of tags</li>
+  <li><code class="language-plaintext highlighter-rouge">git tag</code>  to see the list of tags</li>
   <li>
-    <p><code class="highlighter-rouge">git tag -l "v1.8*"</code>  see the list of tags matching a pattern</p>
+    <p><code class="language-plaintext highlighter-rouge">git tag -l "v1.8*"</code>  see the list of tags matching a pattern</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">git show tagname</code>  See info about a tag</p>
+    <p><code class="language-plaintext highlighter-rouge">git show tagname</code>  See info about a tag</p>
   </li>
-  <li><code class="highlighter-rouge">git push origin tagname</code>  publish tag</li>
-  <li><code class="highlighter-rouge">git push origin --tags</code>  publish all tags</li>
+  <li><code class="language-plaintext highlighter-rouge">git push origin tagname</code>  publish tag</li>
+  <li><code class="language-plaintext highlighter-rouge">git push origin --tags</code>  publish all tags</li>
   <li>
-    <p><code class="highlighter-rouge">git push origin --follow-tags</code> publish only annotated tags</p>
+    <p><code class="language-plaintext highlighter-rouge">git push origin --follow-tags</code> publish only annotated tags</p>
   </li>
-  <li><code class="highlighter-rouge">git tag -d tagname</code>  delete tag in local repo</li>
-  <li><code class="highlighter-rouge">git push origin --delete tagname</code>  delete tag in remote</li>
+  <li><code class="language-plaintext highlighter-rouge">git tag -d tagname</code>  delete tag in local repo</li>
+  <li><code class="language-plaintext highlighter-rouge">git push origin --delete tagname</code>  delete tag in remote</li>
   <li>
-    <p><code class="highlighter-rouge">git push origin :refs/tags/tagname</code>  same than previous</p>
+    <p><code class="language-plaintext highlighter-rouge">git push origin :refs/tags/tagname</code>  same than previous</p>
   </li>
-  <li><code class="highlighter-rouge">git checkout tagname</code>  switch to a tag</li>
-  <li><code class="highlighter-rouge">git checkout -b new_branch tagname</code>  create new branch from tag</li>
+  <li><code class="language-plaintext highlighter-rouge">git checkout tagname</code>  switch to a tag</li>
+  <li><code class="language-plaintext highlighter-rouge">git checkout -b new_branch tagname</code>  create new branch from tag</li>
 </ul>
 
 <h2 id="animate-git-history">Animate Git history</h2>
@@ -595,23 +595,23 @@ There are two types of tags:</p>
   </article><!-- .post -->
 
       </main><!-- .site-main -->
-      <footer id="colophon" class="site-footer inner-sm">
-  <p class="site-info">
+      <div class="page__footer-follow">
+  <ul class="social-icons">
     
+
     
-    <span class="copyright">&copy; Stackbit. All rights reserved. This Jamstack site was created with <a href="https://www.stackbit.com/?utm_source=deployed-footer" target="_blank" rel="noopener">Stackbit</a></span>
-    
-    
-  </p><!-- .site-info -->
-  <a id="to-top" class="to-top" href="#page"><span class="icon-arrow-up" aria-hidden="true"></span><span
-      class="screen-reader-text">Back to top</span></a>
-</footer><!-- .site-footer -->
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Cecilio García Quiros Website. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
     </div><!-- .inner -->
   </div><!-- .site-content -->
 </div><!-- .site -->
 
-        <script src="/js/init.js"></script>
-        <script src="/js/page-load.js"></script>
-    </body> 
+        <!-- <script src="/js/init.js"></script> -->
+        <!-- <script src="/js/page-load.js"></script> -->
+    </body>
 </html>
