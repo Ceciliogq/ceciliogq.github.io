@@ -45,3 +45,21 @@ Image credit: [masdearte](https://masdearte.com/especiales/dinteles-bovedas-y-ar
 - Albanega: espacio triangular entre el arco y el recuadro.
 ![image](/images/albanega.jpg)
 - Alfanje: sable corto y curvo. También pez espada.
+- Peculio: dinero y bienes de una persona.
+- Exangüe: desangrado, sin ninguna fuerza, muerto.
+- Pergeñar: disponer o ejecutar algo con más o menos habilidad.
+- Sojuzgar: sujetar o dominar con violencia algo o a alguien.
+- Carbúnculo: rubí.
+- Aljama: barrio donde vivía la comunidad judía (o musulmana).
+- Arredrar: amedrentar, atemorizar.
+- Talabarte: cinturón de cuero del que cuelga la espada.
+- Pogromo: masacre de judíos, aceptada por el poder.
+- Diáspora: dispersión de grupos humanos que abandonan su lugar de origen.
+- Viático: ecuristía a los enfermos en peligro de muerte.
+- Guanche: de un pueblo que habitaba las islas Canarias al tiempo de su conquista
+- Tundir: cortar o igualar a tijera el pelo de los paños.
+- Codicilo: documento con la última voluntad.
+- Seteno: septeno: séptimo.
+- Onerosa: pesado, molesto o gravoso.
+- Pena pecuniaria: multa.
+- Introito: en el teatro clásico español, prólogo que explica el argumento de la obra.

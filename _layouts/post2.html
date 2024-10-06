@@ -1,0 +1,61 @@
+---
+layout: body
+---
+
+{% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+  {% include page__hero.html %}
+{% elsif page.header.video.id and page.header.video.provider %}
+  {% include page__hero_video.html %}
+{% endif %}
+
+{% if page.url != "/" and site.breadcrumbs %}
+  {% unless paginator %}
+    {% include breadcrumbs.html %}
+  {% endunless %}
+{% endif %}
+
+  <article class="post post-full">
+    <header class="post-header inner-sm">
+      <h1 class="post-title underline">{{ page.title }}</h1>
+      {% assign subtitle_is_not_empty = page.subtitle | is_not_empty %}
+      {% if subtitle_is_not_empty %}
+      <div class="post-subtitle">
+        {{ page.subtitle }}
+      </div>
+      {% endif %}
+    </header>
+    {% assign content_img_path_is_not_empty = page.content_img_path | is_not_empty %}
+    {% if content_img_path_is_not_empty %}
+
+
+
+    <div class="post-image">
+      <img src="{{ page.content_img_path | relative_url }}" alt="{{ page.content_img_alt }}" />
+    </div>
+    {% endif %}
+
+    <section class="page__content" itemprop="text">
+      {% if page.toc %}
+        <aside class="sidebar__right {% if page.toc_sticky %}sticky{% endif %}">
+          <nav class="toc">
+            <header><h4 class="nav__title"><i class="fas fa-{{ page.toc_icon | default: 'file-alt' }}"></i> {{ page.toc_label | default: site.data.ui-text[site.locale].toc_label }}</h4></header>
+            {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc__menu" %}
+          </nav>
+        </aside>
+      {% endif %}
+      {{ content }}
+      {% if page.link %}<div><a href="{{ page.link }}" class="btn btn--primary">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
+    </section>
+
+    <footer class="page__meta">
+      {% if site.data.ui-text[site.locale].meta_label %}
+        <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
+      {% endif %}
+      {% include page__taxonomy.html %}
+      {% if page.last_modified_at %}
+        <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.last_modified_at | date: "%Y-%m-%d" }}">{{ page.last_modified_at | date: "%B %d, %Y" }}</time></p>
+      {% elsif page.date %}
+        <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Updated:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time></p>
+      {% endif %}
+    </footer>
+  </article><!-- .post -->
